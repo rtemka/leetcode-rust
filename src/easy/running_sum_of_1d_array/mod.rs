@@ -1,4 +1,4 @@
-/// https://leetcode.com/problems/running-sum-of-1d-array
+/// https://leetcode.com/problems/richest-customer-wealth/description/
 struct Solution {}
 
 impl Solution {
@@ -19,6 +19,7 @@ mod tests {
     use env_logger;
     use log;
 
+    /// RUST_LOG=debug cargo t running_sum
     #[test]
     fn running_sum() {
         env_logger::init();
