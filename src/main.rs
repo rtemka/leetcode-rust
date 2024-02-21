@@ -1,4 +1,6 @@
 #![allow(dead_code)]
+mod array;
+mod daily;
 mod easy;
 
 fn main() {
