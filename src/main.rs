@@ -2,6 +2,7 @@
 mod array;
 mod daily;
 mod easy;
+mod recursion;
 
 fn main() {
     println!(
