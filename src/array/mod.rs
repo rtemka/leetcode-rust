@@ -1,5 +1,6 @@
 pub mod duplicate_zeroes;
 pub mod even_number_of_digits;
+pub mod if_n_and_its_double_exist;
 pub mod max_cons_ones;
 pub mod merge_sorted_arrays;
 pub mod rem_dups_from_sorted_array;
