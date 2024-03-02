@@ -5,6 +5,6 @@ pub mod max_cons_ones;
 pub mod merge_sorted_arrays;
 pub mod rem_dups_from_sorted_array;
 pub mod remove_element;
+pub mod rep_elems_with_gratests_from_right;
 pub mod squares_of_the_sorted;
 pub mod valid_mountain_array;
-
