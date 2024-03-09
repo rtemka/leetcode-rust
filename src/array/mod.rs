@@ -7,6 +7,7 @@ pub mod mv_zeroes;
 pub mod rem_dups_from_sorted_array;
 pub mod remove_element;
 pub mod rep_elems_with_gratests_from_right;
+pub mod search_in_rotated_sorted_array;
 pub mod sort_array_by_parity;
 pub mod squares_of_the_sorted;
 pub mod valid_mountain_array;
