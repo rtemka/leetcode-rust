@@ -1,3 +1,4 @@
+pub mod fibonacci_number;
 pub mod pascal_triangle_2;
 pub mod reverse_linked_list;
 pub mod reverse_string;
