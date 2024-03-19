@@ -6,7 +6,7 @@ struct Solution {}
 impl Solution {
     // recursive
     pub fn climb_stairs(n: i32) -> i32 {
-        if n < 3 {
+        if n < 4 {
             return n;
         }
         Self::climb_stairs(n - 1) + Self::climb_stairs(n - 2)
