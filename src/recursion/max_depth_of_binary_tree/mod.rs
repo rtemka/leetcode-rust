@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
 struct Solution {}
 
 // Definition for a binary tree node.
@@ -18,12 +19,24 @@ impl TreeNode {
         }
     }
 }
+
 use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
     pub fn max_depth(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
         match root {
-            Some(_n) => 1,
+            Some(rc) => {
+                let node = rc.borrow();
+                let left = Self::max_depth(node.left.clone());
+                let right = Self::max_depth(node.right.clone());
+                if left + right == 0 {
+                    1
+                } else if left > right {
+                    left + 1
+                } else {
+                    right + 1
+                }
+            }
             None => 0,
         }
     }
@@ -56,6 +69,6 @@ mod tests {
                 right: None,
             }))),
         }));
-        assert_eq!(2, Solution::max_depth(Some(bst)));
+        assert_eq!(3, Solution::max_depth(Some(bst)));
     }
 }
