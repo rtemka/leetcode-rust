@@ -13,6 +13,10 @@ impl Solution {
         }
         rs
     }
+
+    pub fn reverse_words_cheat(s: String) -> String {
+        s.split_whitespace().rev().collect::<Vec<&str>>().join(" ")
+    }
 }
 
 #[cfg(test)]
