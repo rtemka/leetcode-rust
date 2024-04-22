@@ -7,6 +7,7 @@ pub mod longest_common_prefix;
 pub mod min_sub_array_sum;
 pub mod plus_one;
 pub mod reverse_words_in_a_string;
+pub mod reverse_words_in_a_string_3;
 pub mod rotate_array;
 pub mod spiral_matrix;
 pub mod str_str;
