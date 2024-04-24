@@ -1,6 +1,7 @@
 #![allow(dead_code)]
 mod array;
 mod array_and_string;
+mod bit_manipulation;
 mod daily;
 mod easy;
 mod recursion;
