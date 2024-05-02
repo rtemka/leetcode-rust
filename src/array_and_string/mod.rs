@@ -12,3 +12,4 @@ pub mod rotate_array;
 pub mod spiral_matrix;
 pub mod str_str;
 pub mod two_sum_2;
+pub mod word_search;
