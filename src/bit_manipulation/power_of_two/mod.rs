@@ -9,7 +9,7 @@ impl Solution {
         //
         // When we perform the bitwise AND operation between 8 (1000) and 7 (0111), the result is 0.
         if n > 0 {
-            n & n - 1 == 0
+            n & (n - 1) == 0
         } else {
             // all negatives and zero is not the power of 2.
             false

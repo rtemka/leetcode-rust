@@ -45,12 +45,10 @@ impl Solution {
                 } else {
                     low = mid + 1;
                 }
+            } else if nums[mid as usize] < target && target <= nums[high as usize] {
+                low = mid + 1;
             } else {
-                if nums[mid as usize] < target && target <= nums[high as usize] {
-                    low = mid + 1;
-                } else {
-                    high = mid - 1;
-                }
+                high = mid - 1;
             }
         }
         -1
@@ -75,6 +73,38 @@ impl Solution {
         }
     }
 }
+// let (mut lo, mut hi) = (0, s.len() - 1);
+// while lo != hi {
+//     if s[lo] != s[hi] {
+//         return false;
+//     }
+//     (lo, hi) = (lo + 1, hi + 1);
+// }
+// true
+// let (mut lo, mut hi) = (0, s.len() - 1);
+// while lo != hi {
+//     if s[lo] != s[hi] {
+//         return false;
+//     }
+//     (lo, hi) = (lo + 1, hi + 1);
+// }
+// true
+// let (mut lo, mut hi) = (0, s.len() - 1);
+// while lo != hi {
+//     if s[lo] != s[hi] {
+//         return false;
+//     }
+//     (lo, hi) = (lo + 1, hi + 1);
+// }
+// true
+// let (mut lo, mut hi) = (0, s.len() - 1);
+// while lo != hi {
+//     if s[lo] != s[hi] {
+//         return false;
+//     }
+//     (lo, hi) = (lo + 1, hi + 1);
+// }
+// true
 
 #[cfg(test)]
 mod tests {
