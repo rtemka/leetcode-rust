@@ -4,6 +4,7 @@ pub mod diagonal_traverse;
 pub mod find_pivot_index;
 pub mod largest_num_at_least_twice;
 pub mod longest_common_prefix;
+pub mod longest_substr_without_rep_chars;
 pub mod min_sub_array_sum;
 pub mod palindrome_partitioning;
 pub mod plus_one;
