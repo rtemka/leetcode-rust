@@ -1,3 +1,5 @@
+use std::{collections::HashSet, usize};
+
 // https://leetcode.com/problems/word-search/description/
 struct Solution;
 
@@ -30,7 +32,53 @@ impl Cell {
 }
 
 impl Solution {
+    // backtracking solution.
     pub fn exist(board: Vec<Vec<char>>, word: String) -> bool {
+        let word = word.as_bytes();
+        let mut set: HashSet<(i32, i32)> = HashSet::new();
+        for row in 0..board.len() {
+            for col in 0..board[row].len() {
+                if Self::dfs(row as i32, col as i32, 0, word, &board, &mut set) {
+                    return true;
+                }
+            }
+        }
+        false
+    }
+
+    fn dfs(
+        row: i32,
+        col: i32,
+        word_i: usize,
+        word: &[u8],
+        board: &Vec<Vec<char>>,
+        set: &mut HashSet<(i32, i32)>,
+    ) -> bool {
+        let (rows, cols) = (board.len() as i32, board[0].len() as i32);
+        // if we found the complete word.
+        if word_i == word.len() {
+            return true;
+        }
+        // if this conditions are true we done with this.
+        if row < 0
+            || col < 0
+            || row >= rows
+            || col >= cols
+            || word[word_i] != board[row as usize][col as usize] as u8
+            || set.contains(&(row, col))
+        {
+            return false;
+        }
+        set.insert((row, col));
+        let res = Self::dfs(row + 1, col, word_i + 1, word, board, set)
+            || Self::dfs(row - 1, col, word_i + 1, word, board, set)
+            || Self::dfs(row, col + 1, word_i + 1, word, board, set)
+            || Self::dfs(row, col - 1, word_i + 1, word, board, set);
+        set.remove(&(row, col));
+        res
+    }
+
+    pub fn exist_naive(board: Vec<Vec<char>>, word: String) -> bool {
         // println!("\n\n");
         if word.len() > board.len() * board[0].len() {
             return false;
