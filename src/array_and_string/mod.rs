@@ -15,4 +15,5 @@ pub mod spiral_matrix;
 pub mod str_str;
 pub mod three_sum;
 pub mod two_sum_2;
+pub mod valid_palindrome;
 pub mod word_search;
