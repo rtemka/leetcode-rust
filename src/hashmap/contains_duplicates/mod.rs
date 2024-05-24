@@ -1,5 +1,6 @@
 use std::collections::HashSet;
 
+// https://leetcode.com/problems/contains-duplicate/description/
 struct Solution;
 
 impl Solution {
