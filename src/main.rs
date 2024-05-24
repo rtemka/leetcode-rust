@@ -4,6 +4,7 @@ mod array_and_string;
 mod bit_manipulation;
 mod daily;
 mod easy;
+mod hashmap;
 mod linked_list;
 mod recursion;
 
