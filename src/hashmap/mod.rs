@@ -1,3 +1,4 @@
+pub mod contains_duplicate_2;
 pub mod contains_duplicates;
 pub mod design_hash_set;
 pub mod first_unique_char_in_string;
