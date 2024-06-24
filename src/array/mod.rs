@@ -1,3 +1,4 @@
+pub mod can_place_flowers;
 pub mod duplicate_zeroes;
 pub mod even_number_of_digits;
 pub mod find_all_numbers_disappeared_in_array;
