@@ -10,6 +10,7 @@ pub mod merge_strings_alternately;
 pub mod min_sub_array_sum;
 pub mod palindrome_partitioning;
 pub mod plus_one;
+pub mod reverse_vowels_in_string;
 pub mod reverse_words_in_a_string;
 pub mod reverse_words_in_a_string_3;
 pub mod rotate_array;
