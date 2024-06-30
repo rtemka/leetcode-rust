@@ -1,6 +1,7 @@
 pub mod add_binary;
 pub mod array_partition_1;
 pub mod diagonal_traverse;
+pub mod excel_sheet_column_title;
 pub mod find_pivot_index;
 pub mod greatest_common_divisor_of_strings;
 pub mod largest_num_at_least_twice;
