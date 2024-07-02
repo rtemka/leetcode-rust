@@ -5,6 +5,7 @@ pub mod find_all_numbers_disappeared_in_array;
 pub mod height_checker;
 pub mod if_n_and_its_double_exist;
 pub mod kids_with_the_greatest_num_of_candies;
+pub mod max_average_subarray_1;
 pub mod max_cons_ones;
 pub mod merge_sorted_arrays;
 pub mod mv_zeroes;
