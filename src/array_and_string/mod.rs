@@ -1,5 +1,6 @@
 pub mod add_binary;
 pub mod array_partition_1;
+pub mod determine_if_two_strings_close;
 pub mod diagonal_traverse;
 pub mod excel_sheet_column_title;
 pub mod find_pivot_index;
