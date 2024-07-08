@@ -1,10 +1,12 @@
 pub mod add_binary;
 pub mod array_partition_1;
+pub mod decode_string;
 pub mod determine_if_two_strings_close;
 pub mod diagonal_traverse;
 pub mod excel_sheet_column_title;
 pub mod find_pivot_index;
 pub mod greatest_common_divisor_of_strings;
+pub mod is_subsequence;
 pub mod largest_num_at_least_twice;
 pub mod longest_common_prefix;
 pub mod longest_substr_without_rep_chars;
