@@ -2,6 +2,7 @@
 mod array;
 mod array_and_string;
 mod backtracking;
+mod binary_tree;
 mod bit_manipulation;
 mod daily;
 mod easy;
