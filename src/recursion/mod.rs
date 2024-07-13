@@ -1,7 +1,6 @@
 pub mod climbing_stairs;
 pub mod fibonacci_number;
 pub mod k_th_symbol_in_grammar;
-pub mod max_depth_of_binary_tree;
 pub mod merge_two_sorted_lists;
 pub mod pascal_triangle;
 pub mod pascal_triangle_2;
@@ -10,5 +9,3 @@ pub mod reverse_linked_list;
 pub mod reverse_string;
 pub mod search_in_bst;
 pub mod swap_nodes_in_pairs;
-pub mod unique_binary_search_trees;
-pub mod unique_binary_search_trees_2;
