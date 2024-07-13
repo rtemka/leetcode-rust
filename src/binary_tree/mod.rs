@@ -1,7 +1,8 @@
+pub mod count_good_nodes_in_bst;
 pub mod leaf_similar_trees;
+pub mod max_depth_of_binary_tree;
 pub mod unique_binary_search_trees;
 pub mod unique_binary_search_trees_2;
-pub mod max_depth_of_binary_tree;
 
 use std::cell::RefCell;
 use std::rc::Rc;
@@ -23,4 +24,3 @@ impl TreeNode {
         }
     }
 }
-
