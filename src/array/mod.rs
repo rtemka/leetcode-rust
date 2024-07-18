@@ -2,6 +2,7 @@ pub mod can_place_flowers;
 pub mod duplicate_zeroes;
 pub mod even_number_of_digits;
 pub mod find_all_numbers_disappeared_in_array;
+pub mod find_the_highest_altitude;
 pub mod height_checker;
 pub mod if_n_and_its_double_exist;
 pub mod kids_with_the_greatest_num_of_candies;
