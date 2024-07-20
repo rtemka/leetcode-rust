@@ -2,6 +2,7 @@ pub mod count_good_nodes_in_bst;
 pub mod leaf_similar_trees;
 pub mod max_depth_of_binary_tree;
 pub mod path_sum;
+pub mod path_sum_2;
 pub mod unique_binary_search_trees;
 pub mod unique_binary_search_trees_2;
 
