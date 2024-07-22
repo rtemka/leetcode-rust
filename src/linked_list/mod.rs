@@ -1,4 +1,5 @@
 pub mod add_two_numbers;
+pub mod delete_the_middle_node;
 pub mod design_linked_list;
 pub mod odd_even_linked_list;
 pub mod palindrome_linked_list;
