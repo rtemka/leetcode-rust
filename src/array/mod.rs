@@ -1,3 +1,4 @@
+pub mod asteroid_collision;
 pub mod can_place_flowers;
 pub mod duplicate_zeroes;
 pub mod even_number_of_digits;
