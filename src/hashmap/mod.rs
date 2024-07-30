@@ -1,6 +1,7 @@
 pub mod contains_duplicate_2;
 pub mod contains_duplicates;
 pub mod design_hash_set;
+pub mod equal_row_and_column_pairs;
 pub mod find_duplicate_subtrees;
 pub mod find_the_diff_of_two_arrays;
 pub mod first_unique_char_in_string;
