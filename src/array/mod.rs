@@ -11,6 +11,7 @@ pub mod max_average_subarray_1;
 pub mod max_cons_ones;
 pub mod merge_sorted_arrays;
 pub mod mv_zeroes;
+pub mod number_of_senior_citizens;
 pub mod product_except_self;
 pub mod rem_dups_from_sorted_array;
 pub mod remove_element;
