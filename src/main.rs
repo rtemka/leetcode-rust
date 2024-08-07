@@ -7,6 +7,7 @@ mod binary_tree;
 mod bit_manipulation;
 mod daily;
 mod easy;
+mod graph;
 mod hashmap;
 mod linked_list;
 mod queue;
