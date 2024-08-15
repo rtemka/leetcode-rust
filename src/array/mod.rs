@@ -7,6 +7,7 @@ pub mod find_the_highest_altitude;
 pub mod height_checker;
 pub mod if_n_and_its_double_exist;
 pub mod kids_with_the_greatest_num_of_candies;
+pub mod lemonade_change;
 pub mod longest_subarray_after_del_1_element;
 pub mod max_average_subarray_1;
 pub mod max_cons_ones;
