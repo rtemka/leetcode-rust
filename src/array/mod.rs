@@ -11,6 +11,7 @@ pub mod lemonade_change;
 pub mod longest_subarray_after_del_1_element;
 pub mod max_average_subarray_1;
 pub mod max_cons_ones;
+pub mod max_distance_in_arrays;
 pub mod max_number_of_k_sum_pairs;
 pub mod merge_sorted_arrays;
 pub mod mv_zeroes;
