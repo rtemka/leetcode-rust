@@ -6,6 +6,7 @@ mod binary_search;
 mod binary_tree;
 mod bit_manipulation;
 mod daily;
+mod dp;
 mod easy;
 mod graph;
 mod hashmap;
