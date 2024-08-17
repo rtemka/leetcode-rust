@@ -1,5 +1,6 @@
 pub mod binary_tree_right_side_view;
 pub mod count_good_nodes_in_bst;
+pub mod delete_node_in_bst;
 pub mod leaf_similar_trees;
 pub mod longest_zigzag_path_in_binary_tree;
 pub mod max_depth_of_binary_tree;
