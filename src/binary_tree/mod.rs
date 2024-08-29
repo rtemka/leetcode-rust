@@ -9,6 +9,7 @@ pub mod path_sum;
 pub mod path_sum_2;
 pub mod unique_binary_search_trees;
 pub mod unique_binary_search_trees_2;
+pub mod validate_bst;
 
 use std::cell::RefCell;
 use std::rc::Rc;
