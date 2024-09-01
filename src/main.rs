@@ -11,6 +11,7 @@ mod easy;
 mod graph;
 mod hashmap;
 mod linked_list;
+mod monotonic_stack;
 mod queue;
 mod recursion;
 
