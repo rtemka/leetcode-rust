@@ -56,32 +56,6 @@ impl Solution {
         //     longest.max(hi - lo) as i32
         // }
     }
-
-    pub fn longest_subarray4(nums: Vec<i32>) -> i32 {
-        let (mut lo, mut hi) = (0, 0);
-        let mut longest = 0;
-        let mut cur = 0;
-        let mut mid = 0;
-        let mut life = 1;
-        while hi < nums.len() {
-            cur += nums[hi];
-            longest = longest.max(cur);
-            match nums[hi] {
-                0 if cur == 0 => (),
-                0 if life == 0 => {
-                    hi = mid;
-                    cur = 0;
-                }
-                0 if life > 0 => {
-                    life -= 1;
-                    mid = hi;
-                }
-                _ => (),
-            }
-            hi += 1;
-        }
-        longest
-    }
 }
 
 #[cfg(test)]
