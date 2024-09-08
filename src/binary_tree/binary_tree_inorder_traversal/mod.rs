@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/binary-tree-inorder-traversal/description/
-struct Solution;
+pub struct Solution;
 
 use crate::binary_tree::TreeNode;
 use std::cell::RefCell;
