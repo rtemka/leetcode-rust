@@ -8,6 +8,7 @@ pub mod insert_into_bst;
 pub mod leaf_similar_trees;
 pub mod longest_zigzag_path_in_binary_tree;
 pub mod max_depth_of_binary_tree;
+pub mod max_level_sum_of_binary_tree;
 pub mod path_sum;
 pub mod path_sum_2;
 pub mod unique_binary_search_trees;
