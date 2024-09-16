@@ -15,6 +15,7 @@ pub mod max_num_of_vowels_in_substring;
 pub mod merge_strings_alternately;
 pub mod min_number_of_pushes_to_type_word_2;
 pub mod min_sub_array_sum;
+pub mod min_time_difference;
 pub mod palindrome_partitioning;
 pub mod plus_one;
 pub mod remove_stars_from_a_string;
