@@ -12,5 +12,6 @@ pub mod intersection_of_2_arrays_2;
 pub mod isomorphic_strings;
 pub mod jewels_and_stones;
 pub mod min_index_sum_of_2_lists;
+pub mod uncommon_words_from_two_sentences;
 pub mod unique_num_of_occurences;
 pub mod valid_sudoku;
