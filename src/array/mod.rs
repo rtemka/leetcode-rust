@@ -11,6 +11,7 @@ pub mod increasing_triplet_subsequence;
 pub mod kids_with_the_greatest_num_of_candies;
 pub mod largest_number;
 pub mod lemonade_change;
+pub mod longest_square_streak_in_array;
 pub mod longest_subarray_after_del_1_element;
 pub mod max_average_subarray_1;
 pub mod max_cons_ones;
