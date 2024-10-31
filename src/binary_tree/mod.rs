@@ -13,6 +13,7 @@ pub mod max_level_sum_of_binary_tree;
 pub mod path_sum;
 pub mod path_sum_2;
 pub mod path_sum_3;
+pub mod same_tree;
 pub mod unique_binary_search_trees;
 pub mod unique_binary_search_trees_2;
 pub mod validate_bst;
