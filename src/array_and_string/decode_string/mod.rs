@@ -4,7 +4,7 @@ struct Solution;
 impl Solution {
     pub fn decode_string(s: String) -> String {
         let bs = s.as_bytes();
-        let (v, _) = Self::parse_string2(&bs);
+        let (v, _) = Self::parse_string2(bs);
         unsafe { String::from_utf8_unchecked(v) }
     }
 

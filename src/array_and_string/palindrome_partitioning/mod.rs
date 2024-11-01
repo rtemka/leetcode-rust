@@ -8,7 +8,7 @@ impl Solution {
         res
     }
 
-    fn backtrack<'a>(s: &'a str, res: &mut Vec<Vec<String>>, cur: &mut Vec<String>) {
+    fn backtrack(s: &str, res: &mut Vec<Vec<String>>, cur: &mut Vec<String>) {
         println!("s={}\tres={:?}\tcur={:?}", s, res, cur);
         if s.is_empty() {
             res.push(cur.clone());

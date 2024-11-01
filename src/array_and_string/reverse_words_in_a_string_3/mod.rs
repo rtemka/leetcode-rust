@@ -8,7 +8,7 @@ impl Solution {
             out.push_str(&w.chars().rev().collect::<String>());
             out.push(' ');
         }
-        if out.len() > 0 {
+        if !out.is_empty() {
             out.truncate(out.len() - 1);
         }
         out

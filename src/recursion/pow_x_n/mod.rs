@@ -14,7 +14,7 @@ impl Solution {
         }
 
         if n < 0 {
-            1.0 / Self::my_pow_rec_helper(x, n * -1)
+            1.0 / Self::my_pow_rec_helper(x, -n)
         } else {
             Self::my_pow_rec_helper(x, n)
         }
@@ -35,7 +35,7 @@ impl Solution {
         if x == 1.0 {
             return x;
         }
-        let (n, negative) = if n < 0 { (n * -1, true) } else { (n, false) };
+        let (n, negative) = if n < 0 { (-n, true) } else { (n, false) };
         let mut res = x;
         println!("{},{}", n, negative);
         for _ in 1..n {

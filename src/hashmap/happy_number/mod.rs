@@ -35,7 +35,7 @@ impl Solution {
             slow = Solution::nxt(slow);
             fast = Solution::nxt(Solution::nxt(fast));
         }
-        return fast == 1;
+        fast == 1
     }
 
     fn nxt(mut n: i32) -> i32 {

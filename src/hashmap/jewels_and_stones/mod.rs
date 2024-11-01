@@ -17,7 +17,7 @@ impl Solution {
     }
 
     pub fn num_jewels_in_stones(jewels: String, stones: String) -> i32 {
-        let set: HashSet<char> = jewels.chars().into_iter().collect();
+        let set: HashSet<char> = jewels.chars().collect();
         stones
             .chars()
             .fold(0, |acc, c| acc + (set.contains(&c)) as i32)

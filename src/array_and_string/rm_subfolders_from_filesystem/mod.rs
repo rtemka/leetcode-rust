@@ -10,18 +10,14 @@ impl Solution {
             set.insert(entry);
         }
         folder
-            .iter()
-            .cloned()
-            .filter(|s| {
+            .iter().filter(|&s| {
                 for (i, c) in s.char_indices().skip(1) {
-                    if c == '/' {
-                        if set.contains(&s[..i]) {
-                            return false;
-                        }
+                    if c == '/' && set.contains(&s[..i]) {
+                        return false;
                     }
                 }
                 true
-            })
+            }).cloned()
             .collect()
     }
 }

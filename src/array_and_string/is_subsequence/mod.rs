@@ -3,7 +3,7 @@ struct Solution;
 
 impl Solution {
     pub fn is_subsequence(s: String, t: String) -> bool {
-        if s.len() == 0 {
+        if s.is_empty() {
             return true;
         }
         let (sb, tb) = (s.into_bytes(), t.into_bytes());

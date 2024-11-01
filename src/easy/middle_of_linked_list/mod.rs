@@ -20,7 +20,7 @@ fn size(acc: i32, n: Option<&Box<ListNode>>) -> i32 {
     if let Some(n) = n {
         return size(acc + 1, n.next.as_ref());
     }
-    return acc;
+    acc
 }
 
 impl Solution {

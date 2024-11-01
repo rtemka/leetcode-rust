@@ -45,7 +45,7 @@ impl Solution {
             pos[ch as usize] = end + 1;
         }
 
-        return max_len as i32;
+        max_len as i32
     }
 }
 

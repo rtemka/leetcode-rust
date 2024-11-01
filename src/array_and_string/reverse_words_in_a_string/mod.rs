@@ -8,7 +8,7 @@ impl Solution {
             rs.push_str(w);
             rs.push(' ');
         }
-        if rs.len() > 0 {
+        if !rs.is_empty() {
             rs.truncate(rs.len() - 1);
         }
         rs

@@ -32,13 +32,13 @@ impl Solution {
 
     #[inline(always)]
     fn target_sum_count(path: &[i32], target_sum: i32) -> i32 {
-        let (mut lo, mut hi) = (0, 1);
+        let (lo, mut hi) = (0, 1);
         let mut cur_sum = path[lo];
-        let mut count = if cur_sum == target_sum { 1 } else { 0 };
+        let count = if cur_sum == target_sum { 1 } else { 0 };
         // let sign = if target_sum < 0 { -1 } else { 1 };
         while hi < path.len() {
             cur_sum += path[hi];
-            if cur_sum == target_sum {}
+            cur_sum == target_sum;
             hi += 1;
         }
         count

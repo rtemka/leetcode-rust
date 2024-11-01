@@ -36,7 +36,7 @@ impl Solution {
                 return false;
             }
         }
-        map.len() == 0
+        map.is_empty()
     }
 
     pub fn is_anagram_sort(s: String, t: String) -> bool {

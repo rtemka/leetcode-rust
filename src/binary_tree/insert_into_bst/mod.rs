@@ -27,12 +27,10 @@ impl Solution {
                 } else {
                     node.right = Some(Rc::new(RefCell::new(TreeNode::new(val))));
                 }
+            } else if node.left.is_some() {
+                Self::insert_into_bst_rec(&mut node.left, val);
             } else {
-                if node.left.is_some() {
-                    Self::insert_into_bst_rec(&mut node.left, val);
-                } else {
-                    node.left = Some(Rc::new(RefCell::new(TreeNode::new(val))));
-                }
+                node.left = Some(Rc::new(RefCell::new(TreeNode::new(val))));
             }
         }
     }

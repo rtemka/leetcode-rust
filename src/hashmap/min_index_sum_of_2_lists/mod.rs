@@ -20,12 +20,12 @@ impl Solution {
             .collect::<HashMap<&String, usize>>();
 
         for (x_idx, x_str) in long.into_iter().enumerate() {
-            if x_idx > min && v.len() > 0 {
+            if x_idx > min && !v.is_empty() {
                 return v;
             }
 
             match map.get(&x_str) {
-                Some(y_idx) if y_idx + x_idx <= min || v.len() == 0 => {
+                Some(y_idx) if y_idx + x_idx <= min || v.is_empty() => {
                     if y_idx + x_idx < min {
                         v.truncate(0);
                     }

@@ -6,7 +6,7 @@ impl Solution {
         let mut count = 0;
         let mut i = n;
         while i != 0 {
-            i = i / 10;
+            i /= 10;
             count += 1;
         }
         count

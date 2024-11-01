@@ -10,7 +10,7 @@ impl Solution {
         mut root: Option<Rc<RefCell<TreeNode>>>,
         key: i32,
     ) -> Option<Rc<RefCell<TreeNode>>> {
-        if let Some(_) = Self::delete_node_helper(&mut root, key) {
+        if Self::delete_node_helper(&mut root, key).is_some() {
             None
         } else {
             root
@@ -22,19 +22,17 @@ impl Solution {
             Some(node) if node.borrow_mut().val != key => {
                 let mut node = node.borrow_mut();
                 if node.val > key {
-                    if let Some(_) = Self::delete_node_helper(&mut node.left, key) {
+                    if Self::delete_node_helper(&mut node.left, key).is_some() {
                         node.left = None;
                         None
                     } else {
                         None
                     }
+                } else if Self::delete_node_helper(&mut node.right, key).is_some() {
+                    node.right = None;
+                    None
                 } else {
-                    if let Some(_) = Self::delete_node_helper(&mut node.right, key) {
-                        node.right = None;
-                        None
-                    } else {
-                        None
-                    }
+                    None
                 }
             }
             Some(node) => {
