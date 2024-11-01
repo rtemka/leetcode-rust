@@ -31,9 +31,21 @@ mod tests {
     fn good_nodes() {
         let tree = TreeNode {
             val: 3,
-            left: None,
+            left: Some(Rc::new(RefCell::new(TreeNode {
+                val: 3,
+                left: Some(Rc::new(RefCell::new(TreeNode {
+                    val: 4,
+                    left: None,
+                    right: None,
+                }))),
+                right: Some(Rc::new(RefCell::new(TreeNode {
+                    val: 2,
+                    left: None,
+                    right: None,
+                }))),
+            }))),
             right: None,
         };
-        assert_eq!(4, Solution::good_nodes(Some(Rc::new(RefCell::new(tree)))));
+        assert_eq!(3, Solution::good_nodes(Some(Rc::new(RefCell::new(tree)))));
     }
 }

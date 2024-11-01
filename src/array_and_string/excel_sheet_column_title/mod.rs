@@ -31,7 +31,7 @@ mod tests {
         assert_eq!("AB".to_owned(), Solution::convert_to_title(28));
         assert_eq!("ZY".to_owned(), Solution::convert_to_title(701));
         assert_eq!("ALL".to_owned(), Solution::convert_to_title(1000));
-        assert_eq!("HZX".to_owned(), Solution::convert_to_title(5432));
+        assert_eq!("GZX".to_owned(), Solution::convert_to_title(5432));
         assert_eq!("AYTD".to_owned(), Solution::convert_to_title(35000));
     }
 }

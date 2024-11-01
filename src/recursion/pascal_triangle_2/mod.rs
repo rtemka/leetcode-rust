@@ -48,8 +48,8 @@ mod tests {
 
     #[test]
     fn pascal_triangle2() {
-        assert_eq!(vec![1], Solution::get_row2(0));
-        assert_eq!(vec![1, 1], Solution::get_row2(1));
+        assert_eq!(vec![1], Solution::get_row(0));
+        assert_eq!(vec![1, 1], Solution::get_row(1));
         assert_eq!(vec![1, 2, 1], Solution::get_row(2));
         assert_eq!(vec![1, 3, 3, 1], Solution::get_row(3));
         assert_eq!(vec![1, 4, 6, 4, 1], Solution::get_row(4));
