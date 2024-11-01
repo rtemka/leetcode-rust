@@ -2,6 +2,7 @@ pub mod add_binary;
 pub mod array_partition_1;
 pub mod count_number_of_consistent_strings;
 pub mod decode_string;
+pub mod del_char_to_make_fancy_string;
 pub mod determine_if_two_strings_close;
 pub mod diagonal_traverse;
 pub mod excel_sheet_column_title;
