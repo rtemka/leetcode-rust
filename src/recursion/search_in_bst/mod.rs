@@ -2,6 +2,7 @@ struct Solution {}
 
 use crate::binary_tree::TreeNode;
 use std::cell::RefCell;
+use std::cmp::Ordering;
 use std::rc::Rc;
 
 // https://leetcode.com/problems/search-in-a-binary-search-tree/description/
@@ -13,12 +14,10 @@ impl Solution {
         match root {
             Some(rc) => {
                 let node = rc.borrow();
-                if val == node.val {
-                    Some(rc.to_owned())
-                } else if val < node.val {
-                    Self::search_bst(node.left.clone(), val)
-                } else {
-                    Self::search_bst(node.right.clone(), val)
+                match val.cmp(&node.val) {
+                    Ordering::Equal => Some(rc.to_owned()),
+                    Ordering::Less => Self::search_bst(node.left.clone(), val),
+                    Ordering::Greater => Self::search_bst(node.right.clone(), val),
                 }
             }
             _ => None,
