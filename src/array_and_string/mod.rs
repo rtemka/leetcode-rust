@@ -26,6 +26,7 @@ pub mod reverse_words_in_a_string;
 pub mod reverse_words_in_a_string_3;
 pub mod rm_subfolders_from_filesystem;
 pub mod rotate_array;
+pub mod rotate_string;
 pub mod spiral_matrix;
 pub mod str_str;
 pub mod three_sum;
