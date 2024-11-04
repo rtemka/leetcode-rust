@@ -29,6 +29,7 @@ pub mod rotate_array;
 pub mod rotate_string;
 pub mod spiral_matrix;
 pub mod str_str;
+pub mod string_compression_3;
 pub mod three_sum;
 pub mod two_sum_2;
 pub mod valid_anagram;
