@@ -15,6 +15,7 @@ pub mod longest_common_prefix;
 pub mod longest_substr_without_rep_chars;
 pub mod max_num_of_vowels_in_substring;
 pub mod merge_strings_alternately;
+pub mod min_num_of_changes_to_make_binary_str_beautiful;
 pub mod min_number_of_pushes_to_type_word_2;
 pub mod min_sub_array_sum;
 pub mod min_time_difference;
