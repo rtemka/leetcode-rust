@@ -36,3 +36,4 @@ pub mod two_sum_2;
 pub mod valid_anagram;
 pub mod valid_palindrome;
 pub mod word_search;
+pub mod zigzag_conversion;
