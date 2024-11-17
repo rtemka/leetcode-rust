@@ -5,6 +5,7 @@ pub mod even_number_of_digits;
 pub mod find_all_numbers_disappeared_in_array;
 pub mod find_the_difference;
 pub mod find_the_highest_altitude;
+pub mod flipping_an_image;
 pub mod height_checker;
 pub mod if_n_and_its_double_exist;
 pub mod increasing_triplet_subsequence;
