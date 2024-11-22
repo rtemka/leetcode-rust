@@ -6,7 +6,7 @@ impl Solution {
             let (mut lo, mut hi) = (0, row.len() - 1);
             while lo <= hi {
                 if lo == hi {
-                    row[lo] ^= 1 << 0;
+                    row[lo] ^= 1;
                     break;
                 }
                 row[lo] ^= 1;
