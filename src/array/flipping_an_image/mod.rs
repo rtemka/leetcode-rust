@@ -9,8 +9,8 @@ impl Solution {
                     row[lo] ^= 1 << 0;
                     break;
                 }
-                row[lo] ^= 1 << 0;
-                row[hi] ^= 1 << 0;
+                row[lo] ^= 1;
+                row[hi] ^= 1;
                 row.swap(lo, hi);
                 (lo, hi) = (lo + 1, hi - 1);
             }

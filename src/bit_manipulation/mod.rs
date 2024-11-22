@@ -6,4 +6,5 @@ pub mod number_complement;
 pub mod number_of_1_bits;
 pub mod power_of_two;
 pub mod reverse_bits;
+pub mod set_mismatch;
 pub mod single_number;
