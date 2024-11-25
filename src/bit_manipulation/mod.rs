@@ -1,4 +1,5 @@
 pub mod binary_number_with_alternating_bits;
+pub mod convert_number_to_hex;
 pub mod counting_bits;
 pub mod find_if_array_can_be_sorted;
 pub mod hamming_distance;
