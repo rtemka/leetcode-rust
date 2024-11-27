@@ -1,3 +1,4 @@
+pub mod binary_gap;
 pub mod binary_number_with_alternating_bits;
 pub mod convert_number_to_hex;
 pub mod counting_bits;
