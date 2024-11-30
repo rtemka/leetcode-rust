@@ -1,5 +1,6 @@
 pub mod binary_gap;
 pub mod binary_number_with_alternating_bits;
+pub mod construct_the_min_bitwise_array_1;
 pub mod convert_number_to_hex;
 pub mod counting_bits;
 pub mod find_if_array_can_be_sorted;
