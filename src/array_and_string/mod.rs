@@ -22,6 +22,7 @@ pub mod min_num_of_changes_to_make_binary_str_beautiful;
 pub mod min_number_of_pushes_to_type_word_2;
 pub mod min_sub_array_sum;
 pub mod min_time_difference;
+pub mod move_pieces_to_obtain_string;
 pub mod palindrome_partitioning;
 pub mod plus_one;
 pub mod remove_stars_from_a_string;
