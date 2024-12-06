@@ -16,6 +16,7 @@ pub mod largest_num_at_least_twice;
 pub mod longest_common_prefix;
 pub mod longest_substr_without_rep_chars;
 pub mod make_a_string_subseq_using_cyclic_incr;
+pub mod max_num_of_ints_to_choose_from_range_1;
 pub mod max_num_of_vowels_in_substring;
 pub mod merge_strings_alternately;
 pub mod min_num_of_changes_to_make_binary_str_beautiful;
