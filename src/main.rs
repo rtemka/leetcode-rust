@@ -1,4 +1,6 @@
 #![allow(dead_code)]
+
+use rand::Rng;
 mod array;
 mod array_and_string;
 mod backtracking;
@@ -16,8 +18,37 @@ mod queue;
 mod recursion;
 
 fn main() {
-    println!(
-        "{}",
-        vec![1, 2] == easy::two_sum_1::two_sum_on(vec![3, 2, 4], 6)
-    );
+    let tags = vec![
+        "bit manipulation",
+        "linked list",
+        "array",
+        "strings",
+        "DP",
+        "DFS",
+        "BFS",
+        "backtracking",
+        "binary search",
+        "prefix sum",
+        "queue",
+        "recursion",
+        "binary tree",
+        "stack",
+        "monotonic stack",
+        "bitmask",
+        "tree",
+        "two pointers",
+        "hash table",
+        "matrix",
+        "sliding window",
+        "trie",
+        "heap(priority queue)",
+        "greedy",
+        "counting",
+        "graph",
+    ];
+    let mut rng = rand::thread_rng();
+    let i = rng.gen_range(0..tags.len());
+    println!("============================================");
+    println!("\n\n And today subject is: {}!\n\n", tags[i]);
+    println!("============================================");
 }
