@@ -7,6 +7,7 @@ pub mod odd_even_linked_list;
 pub mod palindrome_linked_list;
 pub mod remove_linked_list_elements;
 pub mod remove_nth_node_from_end_of_list;
+pub mod reorder_list;
 pub mod reverse_nodes_in_k_group;
 pub mod rotate_list;
 
