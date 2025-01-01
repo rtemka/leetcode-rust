@@ -10,6 +10,7 @@ pub mod height_checker;
 pub mod if_n_and_its_double_exist;
 pub mod increasing_triplet_subsequence;
 pub mod kids_with_the_greatest_num_of_candies;
+pub mod kth_largest_element_in_array;
 pub mod largest_number;
 pub mod lemonade_change;
 pub mod longest_square_streak_in_array;
