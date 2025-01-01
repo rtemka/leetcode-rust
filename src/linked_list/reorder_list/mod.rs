@@ -1,12 +1,9 @@
+// https://leetcode.com/problems/reorder-list/description/
 struct Solution;
 
 use crate::linked_list::ListNode;
 
 impl Solution {
-    pub fn reorder_list_rec(_head: &mut Option<Box<ListNode>>) {
-        todo!("do recursion version!")
-    }
-
     pub fn reorder_list(head: &mut Option<Box<ListNode>>) {
         let mut v: Vec<Option<Box<ListNode>>> = Vec::new();
         let mut cur = head.take();
@@ -14,7 +11,7 @@ impl Solution {
             cur = node.next.take();
             v.push(Some(node));
         }
-        eprintln!("{:#?}", v);
+        // eprintln!("{:#?}", v);
 
         let mut cur = head;
         let (mut lo, mut hi) = (0, v.len() - 1);
@@ -62,15 +59,6 @@ mod tests {
         for n in &expected {
             let node = head.take().expect("expect to take some node");
             assert_eq!(*n, node.val);
-            head = node.next;
-        }
-
-        Solution::reorder_list_rec(&mut head);
-        eprintln!("{:#?}", head);
-
-        for n in expected {
-            let node = head.take().expect("expect to take some node");
-            assert_eq!(n, node.val);
             head = node.next;
         }
     }
