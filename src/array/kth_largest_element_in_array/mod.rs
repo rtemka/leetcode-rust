@@ -7,7 +7,6 @@ impl Solution {
     // cheat whit sorting
     pub fn find_kth_largest_sorting(mut nums: Vec<i32>, k: i32) -> i32 {
         nums.sort_unstable_by(|a, b| b.cmp(a));
-        println!("{:#?}", nums);
         nums[k as usize - 1]
     }
 
