@@ -32,4 +32,5 @@ pub mod sort_array_by_parity;
 pub mod squares_of_the_sorted;
 pub mod string_compression;
 pub mod third_max_number;
+pub mod top_k_frequent_element;
 pub mod valid_mountain_array;
