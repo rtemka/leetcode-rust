@@ -14,6 +14,7 @@ mod graph;
 mod hashmap;
 mod linked_list;
 mod monotonic_stack;
+mod priority_queue;
 mod queue;
 mod recursion;
 
