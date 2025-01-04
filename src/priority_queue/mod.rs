@@ -25,6 +25,15 @@ where
         Self { storage: v }
     }
 
+    pub fn from_iter<I: IntoIterator<Item = T>>(iter: I) -> Heap<T> {
+        Heap::from(iter.into_iter().collect::<Vec<_>>())
+    }
+
+    #[inline(always)]
+    pub fn len(&self) -> usize {
+        self.storage.len()
+    }
+
     /// Determines if heap `a` value has lower priority than `b` value.
     ///
     /// # Panics
@@ -86,6 +95,29 @@ where
             parent = child;
         }
     }
+
+    /// Rebuilds the heap.
+    #[inline(always)]
+    fn rebuild(&mut self) {
+        let mut n = self.len() / 2;
+        while n > 1 {
+            n -= 1;
+            self.sink(n);
+        }
+    }
+}
+
+impl<T: Ord + Default> From<Vec<T>> for Heap<T> {
+    /// Converts a `Vec<T>` into a `Heap<T>`.
+    ///
+    /// This conversion happens in-place, and has *O*(*n*) time complexity.
+    fn from(vec: Vec<T>) -> Heap<T> {
+        let mut heap = Heap { storage: vec };
+        heap.storage.push(T::default());
+        heap.swap(0, heap.len()-1);
+        heap.rebuild();
+        heap
+    }
 }
 
 #[cfg(test)]
@@ -116,10 +148,29 @@ mod tests {
         for i in 1..=10 {
             heap.push(i);
         }
-        println!("{:#?}", heap);
+        // println!("{:#?}", heap);
         for i in (1..=10).rev() {
             assert_eq!(heap.pop().unwrap(), i);
         }
-        println!("{:#?}", heap);
+        // println!("{:#?}", heap);
+    }
+
+    #[test]
+    fn priority_queue_from_vec() {
+        let v = vec![1,2,3,4,5];
+        let mut heap = Heap::from(v.clone());
+        // println!("{:#?}", heap);
+        for n in v.into_iter().rev() {
+            assert_eq!(n, heap.pop().unwrap());
+        }
+    }
+    #[test]
+    fn priority_queue_from_iter() {
+        let v = vec![1,2,3,4,5];
+        let mut heap = Heap::from_iter(v.clone());
+        // println!("{:#?}", heap);
+        for n in v.into_iter().rev() {
+            assert_eq!(n, heap.pop().unwrap());
+        }
     }
 }
