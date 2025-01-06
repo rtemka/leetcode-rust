@@ -1,3 +1,4 @@
+pub mod basic_calculator;
 pub mod climbing_stairs;
 pub mod fibonacci_number;
 pub mod k_th_symbol_in_grammar;
