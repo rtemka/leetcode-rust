@@ -5,7 +5,6 @@ pub mod bitwise_and_of_numbers_range;
 pub mod construct_the_min_bitwise_array_1;
 pub mod convert_number_to_hex;
 pub mod counting_bits;
-pub mod find_duplicate_nubmer;
 pub mod find_if_array_can_be_sorted;
 pub mod hamming_distance;
 pub mod min_bits_flips_to_convert_number;
