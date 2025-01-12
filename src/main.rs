@@ -11,6 +11,7 @@ mod daily;
 mod dp;
 mod easy;
 mod graph;
+mod greedy;
 mod hashmap;
 mod linked_list;
 mod monotonic_stack;
