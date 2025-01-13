@@ -19,6 +19,7 @@ pub mod reverse_bits;
 pub mod set_mismatch;
 pub mod single_number;
 pub mod single_number_2;
+pub mod single_number_3;
 pub mod smallest_number_with_all_set_bits;
 pub mod sort_integers_by_the_num_of_1_bits;
 pub mod xor_operation_in_array;
