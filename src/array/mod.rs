@@ -6,6 +6,7 @@ pub mod find_all_numbers_disappeared_in_array;
 pub mod find_duplicate_nubmer;
 pub mod find_the_difference;
 pub mod find_the_highest_altitude;
+pub mod first_missing_positive;
 pub mod flipping_an_image;
 pub mod height_checker;
 pub mod if_n_and_its_double_exist;
