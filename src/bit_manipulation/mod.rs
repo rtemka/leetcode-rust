@@ -2,6 +2,7 @@ pub mod binary_gap;
 pub mod binary_number_with_alternating_bits;
 pub mod binary_prefix_divisible_by_5;
 pub mod bitwise_and_of_numbers_range;
+pub mod bitwise_xor_of_all_pairings;
 pub mod construct_the_min_bitwise_array_1;
 pub mod convert_number_to_hex;
 pub mod counting_bits;
