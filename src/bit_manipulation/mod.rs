@@ -14,6 +14,7 @@ pub mod number_complement;
 pub mod number_of_1_bits;
 pub mod number_of_bit_changes_to_make_two_int_equal;
 pub mod number_of_even_and_odd_bits;
+pub mod power_of_four;
 pub mod power_of_two;
 pub mod prime_number_of_set_bits_in_b_representation;
 pub mod reverse_bits;
