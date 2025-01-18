@@ -2,6 +2,7 @@ pub mod asteroid_collision;
 pub mod can_place_flowers;
 pub mod duplicate_zeroes;
 pub mod even_number_of_digits;
+pub mod find_all_duplicates_in_array;
 pub mod find_all_numbers_disappeared_in_array;
 pub mod find_duplicate_nubmer;
 pub mod find_the_difference;
