@@ -1,8 +1,10 @@
 pub mod basic_calculator;
 pub mod climbing_stairs;
 pub mod fibonacci_number;
+pub mod find_the_kth_char_in_string_game_1;
 pub mod k_th_symbol_in_grammar;
 pub mod merge_two_sorted_lists;
+pub mod number_of_digit_one;
 pub mod pascal_triangle;
 pub mod pascal_triangle_2;
 pub mod permutation_sequence;
