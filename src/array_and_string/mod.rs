@@ -34,6 +34,7 @@ pub mod reverse_words_in_a_string_3;
 pub mod rm_subfolders_from_filesystem;
 pub mod rotate_array;
 pub mod rotate_string;
+pub mod shifting_letters;
 pub mod special_array_1;
 pub mod special_array_2;
 pub mod spiral_matrix;
