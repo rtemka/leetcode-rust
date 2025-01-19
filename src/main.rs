@@ -22,6 +22,7 @@ mod recursion;
 fn main() {
     let tags = vec![
         "bit manipulation",
+        "sorting(I mean, the handwritten!)",
         "linked list",
         "array",
         "strings",
