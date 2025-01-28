@@ -14,6 +14,7 @@ pub mod isomorphic_strings;
 pub mod jewels_and_stones;
 pub mod longest_string_chain;
 pub mod min_index_sum_of_2_lists;
+pub mod minimum_window_substring;
 pub mod replace_words;
 pub mod uncommon_words_from_two_sentences;
 pub mod unique_num_of_occurences;

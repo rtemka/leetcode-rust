@@ -114,7 +114,7 @@ impl<T: Ord + Default> From<Vec<T>> for Heap<T> {
     fn from(vec: Vec<T>) -> Heap<T> {
         let mut heap = Heap { storage: vec };
         heap.storage.push(T::default());
-        heap.swap(0, heap.len()-1);
+        heap.swap(0, heap.len() - 1);
         heap.rebuild();
         heap
     }
@@ -157,7 +157,7 @@ mod tests {
 
     #[test]
     fn priority_queue_from_vec() {
-        let v = vec![1,2,3,4,5];
+        let v = vec![1, 2, 3, 4, 5];
         let mut heap = Heap::from(v.clone());
         // println!("{:#?}", heap);
         for n in v.into_iter().rev() {
@@ -166,7 +166,7 @@ mod tests {
     }
     #[test]
     fn priority_queue_from_iter() {
-        let v = vec![1,2,3,4,5];
+        let v = vec![1, 2, 3, 4, 5];
         let mut heap = Heap::from_iter(v.clone());
         // println!("{:#?}", heap);
         for n in v.into_iter().rev() {
