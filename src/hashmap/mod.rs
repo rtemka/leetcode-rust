@@ -12,6 +12,7 @@ pub mod intersection_of_2_arrays;
 pub mod intersection_of_2_arrays_2;
 pub mod isomorphic_strings;
 pub mod jewels_and_stones;
+pub mod longest_string_chain;
 pub mod min_index_sum_of_2_lists;
 pub mod replace_words;
 pub mod uncommon_words_from_two_sentences;
