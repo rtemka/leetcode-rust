@@ -1,3 +1,4 @@
+pub mod brick_wall;
 pub mod contains_duplicate_2;
 pub mod contains_duplicates;
 pub mod design_hash_set;
