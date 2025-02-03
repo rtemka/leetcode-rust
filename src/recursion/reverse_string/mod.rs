@@ -2,6 +2,7 @@ struct Solution {}
 
 // https://leetcode.com/problems/reverse-string/
 impl Solution {
+    #[allow(clippy::all)]
     pub fn reverse_string(s: &mut Vec<char>) {
         let mut lo = 0;
         let mut hi = s.len() as i32 - 1;
@@ -12,7 +13,7 @@ impl Solution {
         }
     }
 
-    pub fn reverse_string_rec(s: &mut Vec<char>) {
+    pub fn reverse_string_rec(s: &mut [char]) {
         Self::swap_fst_last(s);
     }
 

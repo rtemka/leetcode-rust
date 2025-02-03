@@ -5,7 +5,7 @@ struct Solution {}
 
 impl Solution {
     // O(1) space; O(n*2) time -> Time limit exceeded on leetcode.
-    pub fn rotate_slow(nums: &mut Vec<i32>, k: i32) {
+    pub fn rotate_slow(nums: &mut [i32], k: i32) {
         for _ in 0..k {
             let mut i = nums.len() - 1;
             while i != 0 {
@@ -16,6 +16,7 @@ impl Solution {
     }
 
     // O(n) space; O(n) time
+    #[allow(clippy::all)]
     pub fn rotate(nums: &mut Vec<i32>, k: i32) {
         let k = k as usize;
         let k = k % nums.len();
@@ -23,7 +24,7 @@ impl Solution {
         *nums = [&nums[r..], &nums[..r]].concat();
     }
 
-    pub fn rotate_cheat(nums: &mut Vec<i32>, k: i32) {
+    pub fn rotate_cheat(nums: &mut [i32], k: i32) {
         let k = k as usize;
         let k = k % nums.len();
         nums.rotate_right(k);

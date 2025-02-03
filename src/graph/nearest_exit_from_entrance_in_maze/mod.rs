@@ -4,6 +4,7 @@ use std::collections::{HashMap, VecDeque};
 struct Solution;
 
 impl Solution {
+    #[allow(clippy::all)]
     pub fn nearest_exit(maze: Vec<Vec<char>>, entrance: Vec<i32>) -> i32 {
         let entrance = (entrance[0] as usize, entrance[1] as usize);
         let mut trace: HashMap<(usize, usize), (usize, usize)> = HashMap::new();

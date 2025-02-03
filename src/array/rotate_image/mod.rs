@@ -2,6 +2,7 @@
 struct Solution;
 
 impl Solution {
+    #[allow(clippy::all)]
     pub fn rotate(matrix: &mut Vec<Vec<i32>>) {
         //     Constraints:
         //

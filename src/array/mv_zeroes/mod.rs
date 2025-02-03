@@ -1,6 +1,7 @@
 struct Solution {}
 
 impl Solution {
+    #[allow(clippy::all)]
     pub fn move_zeroes(nums: &mut Vec<i32>) {
         let mut lo = 0;
         for i in 0..nums.len() {

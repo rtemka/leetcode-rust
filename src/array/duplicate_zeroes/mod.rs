@@ -2,6 +2,7 @@ struct Solution {}
 
 // https://leetcode.com/problems/duplicate-zeros/description/
 impl Solution {
+    #[allow(clippy::all)]
     pub fn duplicate_zeros(arr: &mut Vec<i32>) {
         let mut i = 0;
         while i < arr.len() {

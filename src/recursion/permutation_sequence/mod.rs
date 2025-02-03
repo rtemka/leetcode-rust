@@ -12,14 +12,14 @@ impl Solution {
         let mut set: HashSet<u8> = HashSet::with_capacity(n as usize);
         let mut v: Vec<String> = Vec::with_capacity(k as usize);
 
-        Self::backtrack(&mut v, &mut s, &mut set, n as usize, k as usize);
+        Self::backtrack(&mut v, &mut s, &mut set, n as usize);
         // dbg!(&v);
 
         unsafe { v.pop().unwrap_unchecked() }
     }
 
     #[inline]
-    fn backtrack(v: &mut Vec<String>, s: &mut String, set: &mut HashSet<u8>, n: usize, k: usize) {
+    fn backtrack(v: &mut Vec<String>, s: &mut String, set: &mut HashSet<u8>, n: usize) {
         if s.len() == n {
             v.push(s.clone());
             return;
@@ -32,7 +32,7 @@ impl Solution {
                 continue;
             }
             s.push((i + Self::OFFSET) as char);
-            Self::backtrack(v, s, set, n, k);
+            Self::backtrack(v, s, set, n);
             s.pop();
             set.remove(&i);
         }
@@ -60,6 +60,7 @@ impl Solution {
     }
 
     #[inline]
+    #[allow(clippy::all)]
     fn next_permutation(nums: &mut Vec<u8>) {
         // Алгоритм Нарайаны для поиска следующей комбинации
         // https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D0%9D%D0%B0%D1%80%D0%B0%D0%B9%D0%B0%D0%BD%D1%8B
