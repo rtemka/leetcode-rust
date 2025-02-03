@@ -15,6 +15,7 @@ mod greedy;
 mod hashmap;
 mod linked_list;
 mod monotonic_stack;
+mod prefix_sum;
 mod priority_queue;
 mod queue;
 mod recursion;
