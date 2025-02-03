@@ -48,7 +48,7 @@ mod tests {
             })),
         }));
 
-        let expected = vec![4, 3, 2, 1];
+        let expected = [4, 3, 2, 1];
         let result = Solution::reverse_list(list);
         let mut cur_node = &result;
         assert!(cur_node.is_some());

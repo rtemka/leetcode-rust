@@ -78,7 +78,7 @@ mod tests {
             })),
         }));
         let mut answer = Solution::add_two_numbers(l1, l2);
-        for i in vec![7, 0, 8] {
+        for i in [7, 0, 8] {
             let n = answer.expect("expect not None value");
             assert_eq!(i, n.val);
             answer = n.next;
@@ -93,7 +93,7 @@ mod tests {
         }));
         let l2 = Some(Box::new(ListNode { val: 9, next: None }));
         let mut answer = Solution::add_two_numbers(l1, l2);
-        for i in vec![1, 5, 3] {
+        for i in [1, 5, 3] {
             let n = answer.expect("expect not None value");
             assert_eq!(i, n.val);
             answer = n.next;
@@ -114,7 +114,7 @@ mod tests {
             })),
         }));
         let mut answer = Solution::add_two_numbers(l1, l2);
-        for i in vec![8, 9, 9, 1] {
+        for i in [8, 9, 9, 1] {
             let n = answer.expect("expect not None value");
             assert_eq!(i, n.val);
             answer = n.next;

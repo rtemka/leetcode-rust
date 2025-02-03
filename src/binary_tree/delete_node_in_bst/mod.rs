@@ -90,16 +90,13 @@ impl Solution {
         root: &mut Option<Rc<RefCell<TreeNode>>>,
         node_to_attach: Option<Rc<RefCell<TreeNode>>>,
     ) {
-        match root {
-            Some(node) => {
-                let mut node = node.borrow_mut();
-                if node.right.is_none() {
-                    node.right = node_to_attach;
-                } else {
-                    Self::attach_to_right(&mut node.right, node_to_attach);
-                }
+        if let Some(node) = root {
+            let mut node = node.borrow_mut();
+            if node.right.is_none() {
+                node.right = node_to_attach;
+            } else {
+                Self::attach_to_right(&mut node.right, node_to_attach);
             }
-            None => (),
         }
     }
 }
@@ -137,6 +134,6 @@ mod tests {
         })));
         let ans = Solution::delete_node(root, 3);
         assert!(ans.is_some());
-        let _expected = vec![5, 4, 6, 2, 7];
+        let _expected = [5, 4, 6, 2, 7];
     }
 }

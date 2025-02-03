@@ -11,16 +11,13 @@ impl Solution {
     }
 
     fn right_side_view_rec(root: &Option<Rc<RefCell<TreeNode>>>, level: usize, v: &mut Vec<i32>) {
-        match root {
-            Some(node) => {
-                let node = node.borrow();
-                if level == v.len() {
-                    v.push(node.val);
-                }
-                Self::right_side_view_rec(&node.right, level + 1, v);
-                Self::right_side_view_rec(&node.left, level + 1, v);
+        if let Some(node) = root {
+            let node = node.borrow();
+            if level == v.len() {
+                v.push(node.val);
             }
-            None => (),
+            Self::right_side_view_rec(&node.right, level + 1, v);
+            Self::right_side_view_rec(&node.left, level + 1, v);
         }
     }
 }

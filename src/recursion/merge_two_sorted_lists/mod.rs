@@ -109,7 +109,7 @@ mod tests {
             })),
         }));
 
-        let expected = vec![1, 1, 2, 3, 4, 4];
+        let expected = [1, 1, 2, 3, 4, 4];
         let result = Solution::merge_two_lists(list1, list2);
         assert!(result.is_some());
         let mut head = &result;

@@ -69,7 +69,7 @@ mod tests {
             })),
         };
         let result_head = Solution::swap_pairs(Some(Box::new(h)));
-        let expected = vec![2, 1, 4, 3, 6, 5];
+        let expected = [2, 1, 4, 3, 6, 5];
         let mut i = 0;
         assert!(result_head.is_some());
         let mut node = &result_head;

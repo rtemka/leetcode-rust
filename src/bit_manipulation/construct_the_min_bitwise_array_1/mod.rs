@@ -14,7 +14,7 @@ impl Solution {
     #[inline]
     fn min_or_plus_one(n: i32) -> i32 {
         for i in 0..n {
-            if (i | i + 1) == n {
+            if (i | (i + 1)) == n {
                 return i;
             }
         }

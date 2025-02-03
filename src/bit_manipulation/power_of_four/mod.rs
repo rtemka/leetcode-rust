@@ -6,7 +6,7 @@ impl Solution {
         // 2. OR mask and n. If it possibly power of 4 then the result of OR will be equal to mask.
         // 3. Then we must check that n have only 1 bit set. For this we check n&n-1 == 0.
         let mask = 0b01010101010101010101010101010101;
-        n > 0 && mask == n | mask && n & n - 1 == 0
+        n > 0 && mask == n | mask && n & (n - 1) == 0
     }
 }
 

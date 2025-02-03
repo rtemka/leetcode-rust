@@ -35,38 +35,35 @@ impl Solution {
         target_sum: i32,
         direction: char,
     ) {
-        match root {
-            Some(node) => {
-                let node = node.borrow();
-                println!("visited: {}", node.val);
-                path_vals.push(node.val);
-                path.push(direction);
-                if node.left.is_none() && node.right.is_none() {
-                    *path_sum += Self::target_sum_count(path, path_vals, path_set, target_sum);
-                } else {
-                    Self::path_sum_rec(
-                        &node.left,
-                        path,
-                        path_vals,
-                        path_set,
-                        path_sum,
-                        target_sum,
-                        Self::LEFT,
-                    );
-                    Self::path_sum_rec(
-                        &node.right,
-                        path,
-                        path_vals,
-                        path_set,
-                        path_sum,
-                        target_sum,
-                        Self::RIGHT,
-                    );
-                }
-                path_vals.pop();
-                path.pop();
+        if let Some(node) = root {
+            let node = node.borrow();
+            println!("visited: {}", node.val);
+            path_vals.push(node.val);
+            path.push(direction);
+            if node.left.is_none() && node.right.is_none() {
+                *path_sum += Self::target_sum_count(path, path_vals, path_set, target_sum);
+            } else {
+                Self::path_sum_rec(
+                    &node.left,
+                    path,
+                    path_vals,
+                    path_set,
+                    path_sum,
+                    target_sum,
+                    Self::LEFT,
+                );
+                Self::path_sum_rec(
+                    &node.right,
+                    path,
+                    path_vals,
+                    path_set,
+                    path_sum,
+                    target_sum,
+                    Self::RIGHT,
+                );
             }
-            None => (),
+            path_vals.pop();
+            path.pop();
         }
     }
 

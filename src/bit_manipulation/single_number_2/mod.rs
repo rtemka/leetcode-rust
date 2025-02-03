@@ -21,7 +21,7 @@ impl Solution {
             if count % 3 != 0 {
                 single = (single << 1) | 1;
             } else {
-                single = (single << 1) | 0;
+                single <<= 1;
             }
         }
         // println!("{:#034b}", single);

@@ -44,11 +44,11 @@ impl Solution {
     pub fn count_digit_one_rec(n: usize, p: u32) -> (usize, usize, u32, usize) {
         let current = n % 10usize.pow(p);
         dbg!(p, n % 10usize.pow(p));
-        println!("");
+        println!();
         match n % 10usize.pow(p) {
             n @ 0 => (0, 1, 0, n),
             n @ 1..10 => (1, 1, 0, n),
-            n @ _ => {
+            n => {
                 let (prev_fact, prev_max, prev_power, prev_digit) =
                     Self::count_digit_one_rec(n, p - 1);
                 let power = 10_usize.pow(prev_power + 1);
@@ -77,7 +77,7 @@ impl Solution {
                 dbg!(
                     current, digit, power, max, fact, prev_fact, prev_max, prev_power, prev_digit,
                 );
-                println!("");
+                println!();
                 (fact, max, prev_power + 1, digit)
             }
         }

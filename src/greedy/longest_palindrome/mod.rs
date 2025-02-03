@@ -6,14 +6,14 @@ struct Solution;
 impl Solution {
     pub fn longest_palindrome(s: String) -> i32 {
         let mut map: HashMap<char, i32> = HashMap::with_capacity(s.len());
-        for c in s.chars().into_iter() {
+        for c in s.chars() {
             map.entry(c).and_modify(|count| *count += 1).or_insert(1);
         }
         // Constraints:
         // 1 <= s.length <= 2000
         let plus_one = map.iter().any(|(_, count)| *count == 1 || *count & 1 == 1);
         map.into_iter().filter(|(_, count)| *count > 1).fold(
-            0 + plus_one as i32,
+            plus_one as i32,
             |acc, (_, count)| {
                 acc + (count - (count & 1 == 1) as i32) // make even, we only
                                                         // conserned with even amount of chars

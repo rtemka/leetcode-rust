@@ -19,18 +19,15 @@ impl Solution {
     }
 
     fn collect_leafs_rec(root: &Option<Rc<RefCell<TreeNode>>>, v: &mut Vec<i32>) {
-        match root {
-            Some(node) => {
-                let node = node.borrow();
-                match (&node.left, &node.right) {
-                    (None, None) => v.push(node.val),
-                    (_, _) => {
-                        Self::collect_leafs_rec(&node.left, v);
-                        Self::collect_leafs_rec(&node.right, v);
-                    }
-                };
-            }
-            None => (),
+        if let Some(node) = root {
+            let node = node.borrow();
+            match (&node.left, &node.right) {
+                (None, None) => v.push(node.val),
+                (_, _) => {
+                    Self::collect_leafs_rec(&node.left, v);
+                    Self::collect_leafs_rec(&node.right, v);
+                }
+            };
         }
     }
 }

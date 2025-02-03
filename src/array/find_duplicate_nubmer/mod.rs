@@ -17,7 +17,7 @@ impl Solution {
                 "slow: {} => {}\t fast: {} => {}",
                 prev_slow, slow, prev_fast, fast
             );
-            println!("");
+            println!();
         }
         // Далее отправляем еще один указатель сначала
         // Он догонит зацикленный указатель ровно на дубликате
@@ -30,7 +30,7 @@ impl Solution {
                 "slow: {} => {}\t slow2: {} => {}",
                 prev_slow, slow, prev_slow2, slow2
             );
-            println!("");
+            println!();
         }
         slow2 as i32
     }

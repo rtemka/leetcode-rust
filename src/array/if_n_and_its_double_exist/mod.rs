@@ -24,9 +24,9 @@ mod tests {
 
     #[test]
     fn check_if_exist() {
-        assert_eq!(true, Solution::check_if_exist(vec![10, 2, 5, 3]));
-        assert_eq!(false, Solution::check_if_exist(vec![3, 1, 7, 11]));
-        assert_eq!(false, Solution::check_if_exist(vec![]));
-        assert_eq!(false, Solution::check_if_exist(vec![1]));
+        assert!(Solution::check_if_exist(vec![10, 2, 5, 3]));
+        assert!(!Solution::check_if_exist(vec![3, 1, 7, 11]));
+        assert!(!Solution::check_if_exist(vec![]));
+        assert!(!Solution::check_if_exist(vec![1]));
     }
 }

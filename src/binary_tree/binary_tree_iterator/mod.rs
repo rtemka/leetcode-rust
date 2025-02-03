@@ -15,14 +15,11 @@ impl BSTIterator {
     }
 
     fn inorder_traverse(root: &Option<Rc<RefCell<TreeNode>>>, vals: &mut Vec<i32>) {
-        match root {
-            Some(node) => {
-                let node = node.borrow();
-                Self::inorder_traverse(&node.left, vals);
-                vals.push(node.val);
-                Self::inorder_traverse(&node.right, vals);
-            }
-            None => (),
+        if let Some(node) = root {
+            let node = node.borrow();
+            Self::inorder_traverse(&node.left, vals);
+            vals.push(node.val);
+            Self::inorder_traverse(&node.right, vals);
         }
     }
 

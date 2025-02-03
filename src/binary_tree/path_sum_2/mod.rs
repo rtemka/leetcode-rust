@@ -18,36 +18,33 @@ impl Solution {
         res: &mut Vec<Vec<i32>>,
         cur: &mut Vec<i32>,
     ) {
-        match root {
-            Some(node) => {
-                let node = node.borrow();
-                cur.push(node.val);
-                match (&node.left, &node.right) {
-                    (None, None) => {
-                        if target_sum == current_sum + node.val {
-                            res.push(cur.clone());
-                        }
+        if let Some(node) = root {
+            let node = node.borrow();
+            cur.push(node.val);
+            match (&node.left, &node.right) {
+                (None, None) => {
+                    if target_sum == current_sum + node.val {
+                        res.push(cur.clone());
                     }
-                    _ => {
-                        Self::path_sum_rec(
-                            &node.left,
-                            target_sum,
-                            current_sum + node.val,
-                            res,
-                            cur,
-                        );
-                        Self::path_sum_rec(
-                            &node.right,
-                            target_sum,
-                            current_sum + node.val,
-                            res,
-                            cur,
-                        );
-                    }
-                };
-                cur.pop();
-            }
-            None => (),
+                }
+                _ => {
+                    Self::path_sum_rec(
+                        &node.left,
+                        target_sum,
+                        current_sum + node.val,
+                        res,
+                        cur,
+                    );
+                    Self::path_sum_rec(
+                        &node.right,
+                        target_sum,
+                        current_sum + node.val,
+                        res,
+                        cur,
+                    );
+                }
+            };
+            cur.pop();
         }
     }
 }

@@ -28,17 +28,14 @@ mod tests {
 
     #[test]
     fn ransom_note() {
-        assert_eq!(
-            true,
+        assert!(
             Solution::can_construct("aa".to_string(), "aab".to_string())
         );
-        assert_eq!(
-            true,
+        assert!(
             Solution::can_construct("art".to_string(), "somethingaaaarrrrtttt".to_string())
         );
-        assert_eq!(
-            false,
-            Solution::can_construct("xxxmmm".to_string(), "mmmassstt".to_string())
+        assert!(
+            !Solution::can_construct("xxxmmm".to_string(), "mmmassstt".to_string())
         );
     }
 }

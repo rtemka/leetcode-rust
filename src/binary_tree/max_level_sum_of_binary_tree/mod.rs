@@ -22,19 +22,16 @@ impl Solution {
         levels: &mut Vec<i32>,
         level: usize,
     ) {
-        match root {
-            Some(node) => {
-                let level = level + 1;
-                let node = node.borrow();
-                if levels.len() < level {
-                    levels.push(node.val);
-                } else {
-                    levels[level - 1] += node.val;
-                }
-                Self::max_level_sum_rec(&node.left, levels, level);
-                Self::max_level_sum_rec(&node.right, levels, level);
+        if let Some(node) = root {
+            let level = level + 1;
+            let node = node.borrow();
+            if levels.len() < level {
+                levels.push(node.val);
+            } else {
+                levels[level - 1] += node.val;
             }
-            None => (),
+            Self::max_level_sum_rec(&node.left, levels, level);
+            Self::max_level_sum_rec(&node.right, levels, level);
         }
     }
 }

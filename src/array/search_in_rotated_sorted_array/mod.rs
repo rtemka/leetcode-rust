@@ -80,29 +80,29 @@ mod tests {
 
     #[test]
     fn search_pivot_point() {
-        assert_eq!(4, Solution::search_pivot_point(&vec![4, 5, 6, 7, 0, 1, 2]),);
-        assert_eq!(1, Solution::search_pivot_point(&vec![3, 1]));
-        assert_eq!(0, Solution::search_pivot_point(&vec![1]));
-        assert_eq!(0, Solution::search_pivot_point(&vec![1, 3]));
-        assert_eq!(0, Solution::search_pivot_point(&vec![1, 2, 3, 4, 5]));
+        assert_eq!(4, Solution::search_pivot_point(&[4, 5, 6, 7, 0, 1, 2]),);
+        assert_eq!(1, Solution::search_pivot_point(&[3, 1]));
+        assert_eq!(0, Solution::search_pivot_point(&[1]));
+        assert_eq!(0, Solution::search_pivot_point(&[1, 3]));
+        assert_eq!(0, Solution::search_pivot_point(&[1, 2, 3, 4, 5]));
         assert_eq!(
             2,
-            Solution::search_pivot_point(&vec![7, 8, 1, 2, 3, 4, 5, 6])
+            Solution::search_pivot_point(&[7, 8, 1, 2, 3, 4, 5, 6])
         );
     }
 
     #[test]
     fn search_in_rotated_sorted_array() {
-        assert_eq!(4, Solution::search(&vec![4, 5, 6, 7, 0, 1, 2], 0));
-        assert_eq!(4, Solution::search(&vec![1, 2, 3, 4, 0], 0));
-        assert_eq!(0, Solution::search(&vec![5, 1, 2, 3, 4], 5));
-        assert_eq!(4, Solution::search(&vec![0, 1, 2, 3, 4], 4));
-        assert_eq!(-1, Solution::search(&vec![4, 5, 6, 7, 0, 1, 2], 3));
-        assert_eq!(-1, Solution::search(&vec![1], 0));
-        assert_eq!(0, Solution::search(&vec![1], 1));
-        assert_eq!(-1, Solution::search(&vec![1], 2));
-        assert_eq!(-1, Solution::search(&vec![1, 3], 0));
-        assert_eq!(-1, Solution::search(&vec![1, 3], 2));
-        assert_eq!(3, Solution::search(&vec![7, 8, 1, 2, 3, 4, 5, 6], 2));
+        assert_eq!(4, Solution::search(&[4, 5, 6, 7, 0, 1, 2], 0));
+        assert_eq!(4, Solution::search(&[1, 2, 3, 4, 0], 0));
+        assert_eq!(0, Solution::search(&[5, 1, 2, 3, 4], 5));
+        assert_eq!(4, Solution::search(&[0, 1, 2, 3, 4], 4));
+        assert_eq!(-1, Solution::search(&[4, 5, 6, 7, 0, 1, 2], 3));
+        assert_eq!(-1, Solution::search(&[1], 0));
+        assert_eq!(0, Solution::search(&[1], 1));
+        assert_eq!(-1, Solution::search(&[1], 2));
+        assert_eq!(-1, Solution::search(&[1, 3], 0));
+        assert_eq!(-1, Solution::search(&[1, 3], 2));
+        assert_eq!(3, Solution::search(&[7, 8, 1, 2, 3, 4, 5, 6], 2));
     }
 }

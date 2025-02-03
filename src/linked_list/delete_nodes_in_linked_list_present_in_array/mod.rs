@@ -64,7 +64,7 @@ mod tests {
         let ans = Solution::modified_list(to_delete, head);
         assert!(ans.is_some());
         let mut cur = &ans;
-        let expected = vec![4, 5];
+        let expected = [4, 5];
         let mut i = 0;
         while let Some(n) = cur {
             assert_eq!(expected[i], n.val);

@@ -61,8 +61,8 @@ mod tests {
         assert_eq!(-10 / -3, Solution::divide(-10, -3));
         assert_eq!(i32::MAX / i32::MAX, Solution::divide(i32::MAX, i32::MAX));
         assert_eq!(i32::MAX / 2, Solution::divide(i32::MAX, 2));
-        assert_eq!(i32::MAX / 1, Solution::divide(i32::MAX, 1));
+        assert_eq!(i32::MAX, Solution::divide(i32::MAX, 1));
         assert_eq!(i32::MIN / i32::MIN, Solution::divide(i32::MIN, i32::MIN));
-        assert_eq!(i32::MIN / 1, Solution::divide(i32::MIN, 1));
+        assert_eq!(i32::MIN, Solution::divide(i32::MIN, 1));
     }
 }

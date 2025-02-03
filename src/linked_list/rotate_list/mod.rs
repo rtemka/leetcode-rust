@@ -67,7 +67,7 @@ mod tests {
             })),
         };
         let mut ans = Solution::rotate_right(Some(Box::new(head)), 2);
-        for i in vec![4, 5, 1, 2, 3] {
+        for i in [4, 5, 1, 2, 3] {
             let node = ans.unwrap();
             assert_eq!(i, node.val);
             ans = node.next;
@@ -81,7 +81,7 @@ mod tests {
             })),
         };
         let mut ans = Solution::rotate_right(Some(Box::new(head)), 4);
-        for i in vec![2, 0, 1] {
+        for i in [2, 0, 1] {
             let node = ans.unwrap();
             assert_eq!(i, node.val);
             ans = node.next;

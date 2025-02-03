@@ -54,7 +54,7 @@ mod tests {
 
         let mut answer = Solution::odd_even_list(Some(Box::new(head)));
         println!("{answer:?}");
-        for n in vec![1, 3, 5, 7, 2, 4, 6] {
+        for n in [1, 3, 5, 7, 2, 4, 6] {
             println!("{n}");
             let node = answer.unwrap();
             assert_eq!(n, node.val);

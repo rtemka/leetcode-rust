@@ -24,7 +24,7 @@ impl Solution {
             }
         }
         // rm last ' '
-        if res.len() > 0 {
+        if !res.is_empty() {
             res.truncate(res.len() - 1);
         }
         res

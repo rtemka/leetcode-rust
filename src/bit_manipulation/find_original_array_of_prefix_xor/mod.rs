@@ -5,7 +5,7 @@ impl Solution {
         let mut xor = 0;
         let mut i = 0;
         while i < pref.len() {
-            pref[i] = xor ^ pref[i];
+            pref[i] ^= xor;
             xor ^= pref[i];
             i += 1;
         }

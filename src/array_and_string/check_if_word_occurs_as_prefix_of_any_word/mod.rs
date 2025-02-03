@@ -5,7 +5,7 @@ impl Solution {
     pub fn is_prefix_of_word(sentence: String, search_word: String) -> i32 {
         let words = sentence.split_whitespace();
         for (i, word) in words.enumerate() {
-            if word.len() >= search_word.len() && &word[0..search_word.len()] == &search_word {
+            if word.len() >= search_word.len() && word[0..search_word.len()] == search_word {
                 return (i + 1) as i32;
             }
         }

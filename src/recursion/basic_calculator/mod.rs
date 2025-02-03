@@ -23,7 +23,7 @@ impl Solution {
             match s[i] {
                 b'+' => operator = Operator::Add,
                 b'-' => operator = Operator::Sub,
-                c if b'0' <= c && c <= b'9' => {
+                c if c.is_ascii_digit() => {
                     let (d, end) = Self::parse_digit(&s[i..]);
                     // let ps = format!(
                     //     "{:?};d={};i={};op={:?}",
@@ -62,7 +62,7 @@ impl Solution {
         let (mut res, mut i) = (0, 0);
         for &c in s {
             match c {
-                c if b'0' <= c && c <= b'9' => res = res * 10 + (c - Self::OFFSET) as i32,
+                c if c.is_ascii_digit() => res = res * 10 + (c - Self::OFFSET) as i32,
                 _ => return (res, i - 1),
             }
             i += 1;
