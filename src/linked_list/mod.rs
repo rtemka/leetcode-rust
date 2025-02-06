@@ -3,6 +3,7 @@ pub mod delete_nodes_in_linked_list_present_in_array;
 pub mod delete_the_middle_node;
 pub mod design_linked_list;
 pub mod max_twin_sum_of_linked_list;
+pub mod merge_k_sorted_lists;
 pub mod odd_even_linked_list;
 pub mod palindrome_linked_list;
 pub mod remove_linked_list_elements;

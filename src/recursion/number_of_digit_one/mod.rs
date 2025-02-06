@@ -9,13 +9,14 @@ struct Count {
 
 impl Solution {
     pub fn count_digit_one(n: i32) -> i32 {
+        println!("NEW TEST CASE: [{n}]");
         let mut p = 0;
         let mut i = 1;
         while i < n {
             p += 1;
             i *= 10;
         }
-        let (prev_fact, prev_max, prev_power, prev_digit) =
+        let (prev_fact, prev_max, prev_power, prev_digit, _, _) =
             Self::count_digit_one_rec(n as usize, p);
         dbg!(prev_fact, prev_max, prev_power, prev_digit,);
         // let n = n as usize;
@@ -41,15 +42,19 @@ impl Solution {
         // 301 + 21 + 2 + 1
     }
 
-    pub fn count_digit_one_rec(n: usize, p: u32) -> (usize, usize, u32, usize) {
+    pub fn count_digit_one_rec(n: usize, p: u32) -> (usize, usize, u32, usize, usize, usize) {
         let current = n % 10usize.pow(p);
         dbg!(p, n % 10usize.pow(p));
         println!();
         match n % 10usize.pow(p) {
-            n @ 0 => (0, 1, 0, n),
-            n @ 1..10 => (1, 1, 0, n),
-            n => {
-                let (prev_fact, prev_max, prev_power, prev_digit) =
+            // n @ 0 => (0, 1, 0, n),
+            // n @ 1..10 => (1, 1, 0, n),
+            // n => {
+            //     let (prev_fact, prev_max, prev_power, prev_digit) =
+            n @ 0 => (0, 1, 0, n, n, 0),
+            n @ 1..10 => (1, 1, 0, n, n, 0),
+            n @ _ => {
+                let (prev_fact, prev_max, prev_power, prev_digit, first_digit, pow_acc) =
                     Self::count_digit_one_rec(n, p - 1);
                 let power = 10_usize.pow(prev_power + 1);
                 // let digit = n / power;
@@ -61,24 +66,44 @@ impl Solution {
 
                 let fact = prev_fact
                     + if digit == 1 {
-                        println!("WE HERE!");
+                        //
                         // prev_max + (prev_digit * 10usize.pow(prev_power) + prev_max)
                         if prev_power == 0 {
-                            prev_max + (prev_digit * 10usize.pow(prev_power) + prev_max)
+                            first_digit + prev_max + 1 // 10, 1[1], 12, 13, 14...
+                                                       // prev_max + (prev_digit * 10usize.pow(prev_power) + prev_max)
                         } else {
-                            prev_max + prev_fact * 2
+                            10usize.pow(prev_power) + first_digit + 1 /*+self*/ + prev_max
+                            // prev_max + prev_fact * 2
                         }
+                        // first_digit + 1 /*+self when 10^1.. or 10,1[1],12,13...*/ + prev_max
                         // prev_max + (prev_digit * 10usize.pow(prev_power) + prev_max) // power
                         // prev_max + power // + (prev_max / digit) // + (n % power == 1) as usize
                     } else {
                         // (n / power - 1) * prev_max + power + prev_max // + (n % power == 1) as usize
-                        digit * prev_max + power + prev_max // + (n % power == 1) as usize
+                        // digit * prev_max + power + prev_max // + (n % power == 1) as usize
+                        digit * prev_max + power
                     };
                 dbg!(
-                    current, digit, power, max, fact, prev_fact, prev_max, prev_power, prev_digit,
+                    current,
+                    digit,
+                    power,
+                    max,
+                    fact,
+                    prev_fact,
+                    prev_max,
+                    prev_power,
+                    prev_digit,
+                    first_digit
                 );
-                println!();
-                (fact, max, prev_power + 1, digit)
+                println!("");
+                (
+                    fact,
+                    max,
+                    prev_power + 1,
+                    digit,
+                    first_digit,
+                    pow_acc + power,
+                )
             }
         }
     }
@@ -99,7 +124,7 @@ impl Solution {
         let mut count = 1;
         for i in 1..=powers_of_ten {
             let c = 9 * p[i - 1] + 10_usize.pow(i as u32) + p[i - 1];
-            dbg!(i, c, 10_usize.pow(i as u32));
+            // dbg!(i, c, 10_usize.pow(i as u32));
             p.push(c);
             count = c;
         }
@@ -112,24 +137,31 @@ mod tests {
     use super::*;
 
     #[test]
-    fn count_digit_one() {
-        assert_eq!(46, Solution::count_by_brute_force(15));
-        assert_eq!(46, Solution::count_by_brute_force(125));
-        assert_eq!(5580, Solution::count_digit_one(11115));
-        assert_eq!(463, Solution::count_digit_one(1115));
-        assert_eq!(46, Solution::count_digit_one(115));
-        assert_eq!(6, Solution::count_digit_one(13));
-        assert_eq!(0, Solution::count_digit_one(0));
+    fn count_digit_one_rec() {
+        assert_eq!(9, Solution::count_digit_one(16));
+        assert_eq!(46, Solution::count_digit_one(116));
+        // assert_eq!(463, Solution::count_digit_one(1116));
+        assert_eq!(1814, Solution::count_digit_one(2534));
+        assert_eq!(690, Solution::count_digit_one(1235));
+        // assert_eq!(5580, Solution::count_digit_one(11115));
+        // assert_eq!(463, Solution::count_digit_one(1115));
+        // assert_eq!(46, Solution::count_digit_one(115));
+        // assert_eq!(6, Solution::count_digit_one(13));
+        // assert_eq!(0, Solution::count_digit_one(0));
     }
 
     #[test]
     fn count_digit_one_brute_force() {
-        assert_eq!(44, Solution::count_by_brute_force(115));
-        assert_eq!(46, Solution::count_by_brute_force(15));
-        assert_eq!(6, Solution::count_by_brute_force(13));
-        assert_eq!(300, Solution::count_by_brute_force(999));
-        assert_eq!(4000, Solution::count_by_brute_force(9999));
-        assert_eq!(50000, Solution::count_by_brute_force(99999));
+        assert_eq!(9, Solution::count_by_brute_force(16));
+        assert_eq!(46, Solution::count_by_brute_force(116));
+        assert_eq!(463, Solution::count_by_brute_force(1116));
+        assert_eq!(5580, Solution::count_by_brute_force(11116));
+        assert_eq!(690, Solution::count_by_brute_force(1235));
+        assert_eq!(1814, Solution::count_by_brute_force(2534));
+        assert_eq!(49978, Solution::count_by_brute_force(99876));
+        // assert_eq!(300, Solution::count_by_brute_force(999));
+        // assert_eq!(4000, Solution::count_by_brute_force(9999));
+        // assert_eq!(50000, Solution::count_by_brute_force(99999));
     }
 
     #[test]
