@@ -23,6 +23,7 @@ pub mod max_cons_ones;
 pub mod max_distance_in_arrays;
 pub mod max_number_of_k_sum_pairs;
 pub mod merge_sorted_arrays;
+pub mod monotonic_array;
 pub mod mv_zeroes;
 pub mod next_permutation;
 pub mod number_of_senior_citizens;
