@@ -1,3 +1,5 @@
+pub mod maximum_subsequence_score;
+
 #[derive(Debug)]
 pub struct Heap<T> {
     storage: Vec<T>,
