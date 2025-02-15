@@ -11,6 +11,7 @@ pub mod find_if_array_can_be_sorted;
 pub mod find_original_array_of_prefix_xor;
 pub mod hamming_distance;
 pub mod min_bits_flips_to_convert_number;
+pub mod min_flips_to_make_a_or_b_equal_to_c;
 pub mod neighboring_bitwise_xor;
 pub mod number_complement;
 pub mod number_of_1_bits;
