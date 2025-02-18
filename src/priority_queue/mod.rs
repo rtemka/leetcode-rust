@@ -1,4 +1,5 @@
 pub mod maximum_subsequence_score;
+pub mod total_cost_to_hire_k_workers;
 
 #[derive(Debug)]
 pub struct Heap<T> {
