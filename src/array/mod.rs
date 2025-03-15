@@ -21,6 +21,7 @@ pub mod longest_square_streak_in_array;
 pub mod longest_subarray_after_del_1_element;
 pub mod max_average_subarray_1;
 pub mod max_cons_ones;
+pub mod max_count_of_pos_and_neg_integer;
 pub mod max_distance_in_arrays;
 pub mod max_number_of_k_sum_pairs;
 pub mod merge_sorted_arrays;
