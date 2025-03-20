@@ -1,3 +1,4 @@
+pub mod apply_operations;
 pub mod asteroid_collision;
 pub mod best_time_to_buy_and_sell_stock;
 pub mod can_place_flowers;
