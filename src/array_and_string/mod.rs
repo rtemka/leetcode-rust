@@ -1,5 +1,6 @@
 pub mod add_binary;
 pub mod adding_spaces_to_a_string;
+pub mod number_of_substrings_containing_all_three_chars;
 pub mod array_partition_1;
 pub mod check_if_word_occurs_as_prefix_of_any_word;
 pub mod circular_sentence;
