@@ -1,6 +1,5 @@
 pub mod add_binary;
 pub mod adding_spaces_to_a_string;
-pub mod number_of_substrings_containing_all_three_chars;
 pub mod array_partition_1;
 pub mod check_if_word_occurs_as_prefix_of_any_word;
 pub mod circular_sentence;
@@ -27,6 +26,8 @@ pub mod min_sub_array_sum;
 pub mod min_time_difference;
 pub mod move_pieces_to_obtain_string;
 pub mod multiply_strings;
+pub mod number_of_substrings_containing_all_three_chars;
+pub mod occurrences_after_bigram;
 pub mod palindrome_partitioning;
 pub mod plus_one;
 pub mod remove_stars_from_a_string;
