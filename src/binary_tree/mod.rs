@@ -10,6 +10,7 @@ pub mod longest_zigzag_path_in_binary_tree;
 pub mod lowest_common_ancestor_of_binary_tree;
 pub mod max_depth_of_binary_tree;
 pub mod max_level_sum_of_binary_tree;
+pub mod minimum_depth_of_binary_tree;
 pub mod path_sum;
 pub mod path_sum_2;
 pub mod path_sum_3;
