@@ -26,6 +26,7 @@ pub mod max_cons_ones;
 pub mod max_count_of_pos_and_neg_integer;
 pub mod max_distance_in_arrays;
 pub mod max_number_of_k_sum_pairs;
+pub mod max_value_of_an_ordered_triplet_1;
 pub mod merge_sorted_arrays;
 pub mod monotonic_array;
 pub mod mv_zeroes;
