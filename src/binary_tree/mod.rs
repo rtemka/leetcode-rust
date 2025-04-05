@@ -8,6 +8,7 @@ pub mod insert_into_bst;
 pub mod leaf_similar_trees;
 pub mod longest_zigzag_path_in_binary_tree;
 pub mod lowest_common_ancestor_of_binary_tree;
+pub mod lowest_common_ancestor_of_deepest_leaves;
 pub mod max_depth_of_binary_tree;
 pub mod max_level_sum_of_binary_tree;
 pub mod minimum_depth_of_binary_tree;
