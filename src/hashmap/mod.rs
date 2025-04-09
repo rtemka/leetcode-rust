@@ -17,6 +17,7 @@ pub mod jewels_and_stones;
 pub mod longest_string_chain;
 pub mod min_index_sum_of_2_lists;
 pub mod min_num_of_operations_to_make_elements_in_array_distinct;
+pub mod min_operations_to_make_array_values_equal_to_k;
 pub mod minimum_window_substring;
 pub mod replace_words;
 pub mod uncommon_words_from_two_sentences;
