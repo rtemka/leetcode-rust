@@ -4,6 +4,7 @@ use rand::Rng;
 mod array;
 mod array_and_string;
 mod backtracking;
+mod bfs_dfs;
 mod binary_search;
 mod binary_tree;
 mod bit_manipulation;
