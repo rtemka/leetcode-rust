@@ -15,6 +15,7 @@ mod graph;
 mod greedy;
 mod hashmap;
 mod linked_list;
+mod math;
 mod monotonic_stack;
 mod prefix_sum;
 mod priority_queue;
