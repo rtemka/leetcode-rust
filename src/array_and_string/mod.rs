@@ -4,6 +4,7 @@ pub mod array_partition_1;
 pub mod check_if_word_occurs_as_prefix_of_any_word;
 pub mod circular_sentence;
 pub mod clear_digits;
+pub mod count_and_say;
 pub mod count_number_of_consistent_strings;
 pub mod decode_string;
 pub mod del_char_to_make_fancy_string;
