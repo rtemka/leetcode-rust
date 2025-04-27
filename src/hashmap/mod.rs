@@ -1,6 +1,7 @@
 pub mod brick_wall;
 pub mod contains_duplicate_2;
 pub mod contains_duplicates;
+pub mod count_complete_subarrays_in_array;
 pub mod count_largest_group;
 pub mod design_hash_set;
 pub mod distribute_candies;
