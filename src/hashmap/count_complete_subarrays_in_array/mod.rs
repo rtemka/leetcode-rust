@@ -1,4 +1,8 @@
+// #2799
 // https://leetcode.com/problems/count-complete-subarrays-in-an-array/description
+// Explanation:
+// See problem #992 for clean explanation. https://leetcode.com/problems/subarrays-with-k-different-integers/editorial/
+// This problem is a simpler variation of #992.
 struct Solution;
 
 use std::collections::{HashMap, HashSet};
