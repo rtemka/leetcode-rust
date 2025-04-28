@@ -6,6 +6,7 @@ pub mod max_twin_sum_of_linked_list;
 pub mod merge_k_sorted_lists;
 pub mod odd_even_linked_list;
 pub mod palindrome_linked_list;
+pub mod remove_duplicates_from_sorted_list;
 pub mod remove_linked_list_elements;
 pub mod remove_nth_node_from_end_of_list;
 pub mod reorder_list;
