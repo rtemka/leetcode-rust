@@ -1,5 +1,8 @@
 #![allow(dead_code)]
 
+// Important and usefull links.
+// https://leetcode.com/discuss/post/665604/important-and-useful-links-from-all-over-ocy8/
+
 use rand::Rng;
 mod array;
 mod array_and_string;

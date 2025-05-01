@@ -1,6 +1,7 @@
 // Great explanation of DP problems.
 // https://leetcode.com/problems/house-robber/solutions/156523/From-good-to-great.-How-to-approach-most-of-DP-problems/
 
+pub mod delete_operation_for_two_strings;
 pub mod edit_distance;
 pub mod frog_jump;
 pub mod house_robber;
