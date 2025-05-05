@@ -11,6 +11,7 @@ pub mod frog_jump;
 pub mod house_robber;
 pub mod longest_common_subsequence;
 pub mod min_cost_climbing_stairs;
+pub mod minimum_path_sum;
 pub mod nth_tribonacci_number;
 pub mod solving_questions_with_brainpower;
 pub mod ugly_number_2;
