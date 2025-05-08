@@ -11,6 +11,7 @@ pub mod delete_operation_for_two_strings;
 pub mod edit_distance;
 pub mod frog_jump;
 pub mod house_robber;
+pub mod jump_game_2;
 pub mod longest_common_subsequence;
 pub mod longest_palindromic_subsequence;
 pub mod maximum_subarray;
