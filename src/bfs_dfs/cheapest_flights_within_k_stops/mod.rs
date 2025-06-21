@@ -50,7 +50,7 @@ impl Solution {
 
         let mut flight_costs = vec![0; n];
         for _ in 0..=k {
-            flight_costs.copy_from_slice(&costs);
+            flight_cost.copy_from_slice(&costs);
             for flight in &flights {
                 let (from, to, price) = (flight[0] as usize, flight[1] as usize, flight[2]);
                 if costs[from] != i32::MAX {
