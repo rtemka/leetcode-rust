@@ -24,6 +24,8 @@ mod prefix_sum;
 mod priority_queue;
 mod queue;
 mod recursion;
+mod sliding_window;
+mod two_pointers;
 
 fn main() {
     let tags = vec![
