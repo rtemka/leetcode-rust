@@ -22,6 +22,7 @@ pub mod min_num_of_operations_to_make_elements_in_array_distinct;
 pub mod min_operations_to_make_array_values_equal_to_k;
 pub mod minimum_window_substring;
 pub mod replace_words;
+pub mod set_matrix_zeroes;
 pub mod subarrays_with_k_different_integers;
 pub mod uncommon_words_from_two_sentences;
 pub mod unique_num_of_occurences;
