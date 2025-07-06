@@ -16,6 +16,7 @@ pub mod intersection_of_2_arrays;
 pub mod intersection_of_2_arrays_2;
 pub mod isomorphic_strings;
 pub mod jewels_and_stones;
+pub mod longest_consecutive_sequence;
 pub mod longest_string_chain;
 pub mod min_index_sum_of_2_lists;
 pub mod min_num_of_operations_to_make_elements_in_array_distinct;
