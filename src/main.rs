@@ -19,7 +19,7 @@ mod greedy;
 mod hashmap;
 mod linked_list;
 mod math;
-mod monotonic_stack;
+mod stack;
 mod prefix_sum;
 mod priority_queue;
 mod queue;
