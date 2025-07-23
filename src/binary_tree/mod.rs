@@ -1,3 +1,4 @@
+pub mod balanced_binary_tree;
 pub mod binary_tree_inorder_traversal;
 pub mod binary_tree_iterator;
 pub mod binary_tree_postorder_traversal;
