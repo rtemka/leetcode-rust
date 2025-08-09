@@ -13,6 +13,7 @@ pub mod lowest_common_ancestor_of_binary_tree;
 pub mod lowest_common_ancestor_of_deepest_leaves;
 pub mod max_depth_of_binary_tree;
 pub mod max_level_sum_of_binary_tree;
+pub mod maximum_width_of_binary_tree;
 pub mod minimum_depth_of_binary_tree;
 pub mod path_sum;
 pub mod path_sum_2;
