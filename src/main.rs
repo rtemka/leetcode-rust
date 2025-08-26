@@ -19,12 +19,13 @@ mod greedy;
 mod hashmap;
 mod linked_list;
 mod math;
-mod stack;
 mod prefix_sum;
 mod priority_queue;
 mod queue;
 mod recursion;
 mod sliding_window;
+mod stack;
+mod trie;
 mod two_pointers;
 
 fn main() {
