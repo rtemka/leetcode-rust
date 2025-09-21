@@ -3,6 +3,7 @@ pub mod binary_tree_inorder_traversal;
 pub mod binary_tree_iterator;
 pub mod binary_tree_postorder_traversal;
 pub mod binary_tree_right_side_view;
+pub mod count_complete_tree_nodes;
 pub mod count_good_nodes_in_bst;
 pub mod delete_node_in_bst;
 pub mod insert_into_bst;
