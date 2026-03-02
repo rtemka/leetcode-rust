@@ -19,7 +19,6 @@ impl Solution {
         let (prev_fact, prev_max, prev_power, prev_digit, _, _) =
             Self::count_digit_one_rec(n as usize, p);
         dbg!(prev_fact, prev_max, prev_power, prev_digit,);
-        // let n = n as usize;
 
         // let mut digits: Vec<usize> = vec![1];
         // let mut count = 1;
