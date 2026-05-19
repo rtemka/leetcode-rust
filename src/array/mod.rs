@@ -33,6 +33,7 @@ pub mod max_value_of_an_ordered_triplet_2;
 pub mod merge_sorted_arrays;
 pub mod monotonic_array;
 pub mod mv_zeroes;
+pub mod n_rep_element_in_size2n_array_961;
 pub mod next_permutation;
 pub mod non_overlapping_intervals;
 pub mod number_of_senior_citizens;
