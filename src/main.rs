@@ -4,59 +4,49 @@
 // https://leetcode.com/discuss/post/665604/important-and-useful-links-from-all-over-ocy8/
 
 use rand::Rng;
-mod array;
-mod array_and_string;
 mod backtracking;
-mod bfs_dfs;
 mod binary_search;
-mod binary_tree;
 mod bit_manipulation;
-mod daily;
-mod dp;
-mod easy;
+mod dynamic_programming;
+mod fast_and_slow_pointers;
 mod graph;
 mod greedy;
-mod hashmap;
+mod hash_table;
+mod heap;
+mod intervals;
 mod linked_list;
-mod math;
+mod math_and_geometry;
+mod misc;
 mod prefix_sum;
-mod priority_queue;
-mod queue;
-mod recursion;
 mod sliding_window;
+mod sorting_and_searching;
 mod stack;
+mod tree;
 mod trie;
 mod two_pointers;
 
 fn main() {
     let tags = vec![
-        "bit manipulation",
-        "sorting(I mean, the handwritten!)",
-        "linked list",
-        "array",
-        "strings",
-        "DP",
-        "DFS",
-        "BFS",
-        "backtracking",
-        "binary search",
-        "prefix sum",
-        "queue",
-        "recursion",
-        "binary tree",
-        "stack",
-        "monotonic stack",
-        "bitmask",
-        "tree",
         "two pointers",
         "hash table",
-        "matrix",
+        "linked list",
+        "fast and slow pointers",
         "sliding window",
+        "binary search",
+        "stack",
+        "heap",
+        "intervals",
+        "prefix sum",
+        "tree",
         "trie",
-        "heap(priority queue)",
-        "greedy",
-        "counting",
         "graph",
+        "backtracking",
+        "dynamic programming",
+        "greedy",
+        "sorting and searching",
+        "bit manipulation",
+        "math and geometry",
+        "misc",
     ];
     let mut rng = rand::thread_rng();
     let i = rng.gen_range(0..tags.len());

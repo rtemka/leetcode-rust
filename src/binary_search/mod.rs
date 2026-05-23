@@ -4,6 +4,9 @@ pub mod find_peak_element;
 pub mod guess_number_hihger_or_lower;
 pub mod koko_eating_bananas;
 pub mod median_of_two_sorted_arrays;
+pub mod pow_x_n;
+pub mod search_in_rotated_sorted_array;
+pub mod special_array_2;
 pub mod successful_pairs_of_spells_and_potions;
 
 pub fn binary_search<T: Ord>(col: &[T], target: T) -> usize {

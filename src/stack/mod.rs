@@ -1,4 +1,9 @@
+pub mod asteroid_collision;
+pub mod basic_calculator;
+pub mod clear_digits;
 pub mod daily_temperatures;
+pub mod decode_string;
 pub mod next_greater_element_2;
 pub mod online_stock_span;
 pub mod remove_all_adjacent_duplicates_in_string;
+pub mod remove_stars_from_a_string;

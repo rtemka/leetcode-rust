@@ -1,3 +1,13 @@
 pub mod find_all_anagrams_in_a_string;
 pub mod longest_harmonious_subsequence;
+pub mod longest_subarray_after_del_1_element;
+pub mod longest_substr_without_rep_chars;
+pub mod max_average_subarray_1;
+pub mod max_cons_ones;
+pub mod max_num_of_vowels_in_substring;
+pub mod max_sum_of_two_non_overlapping_subarrays;
+pub mod min_sub_array_sum;
+pub mod minimum_window_substring;
+pub mod number_of_substrings_containing_all_three_chars;
 pub mod sliding_window_maximum;
+pub mod subarrays_with_k_different_integers;

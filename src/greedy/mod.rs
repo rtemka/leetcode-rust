@@ -1,3 +1,11 @@
+pub mod array_partition_1;
 pub mod assign_cookies;
+pub mod can_place_flowers;
+pub mod divide_array_into_equal_pairs;
 pub mod gas_station;
+pub mod increasing_triplet_subsequence;
+pub mod lemonade_change;
 pub mod longest_palindrome;
+pub mod max_distance_in_arrays;
+pub mod max_num_of_ints_to_choose_from_range_1;
+pub mod min_number_of_pushes_to_type_word_2;
