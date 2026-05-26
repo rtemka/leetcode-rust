@@ -9,6 +9,7 @@ pub mod excel_sheet_column_title;
 pub mod k_th_symbol_in_grammar;
 pub mod missing_number;
 pub mod multiply_strings;
+pub mod nim_game;
 pub mod number_of_digit_one;
 pub mod permutation_sequence;
 pub mod plus_one;
