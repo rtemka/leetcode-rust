@@ -15,7 +15,7 @@ impl Solution {
     ) -> Option<Box<ListNode>> {
         nums.sort_unstable();
         let mut cur = &mut head;
-        while let Some(ref mut node) = cur {
+        while let Some(node) = cur {
             while nums.binary_search(&node.val).is_ok() {
                 if let Some(n) = node.next.take() {
                     *node = n;

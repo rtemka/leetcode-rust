@@ -104,7 +104,7 @@ impl MyLinkedList {
 
     fn delete_at_index(&mut self, index: i32) {
         match &mut self.head {
-            Some(ref mut n) if index == 0 => self.head = n.next.take(),
+            Some(n) if index == 0 => self.head = n.next.take(),
             None => return,
             _ => (),
         }

@@ -7,6 +7,7 @@ pub mod merge_sorted_arrays;
 pub mod merge_strings_alternately;
 pub mod move_pieces_to_obtain_string;
 pub mod move_zeroes;
+pub mod palindromic_substrings;
 pub mod partition_lables;
 pub mod rem_dups_from_sorted_array;
 pub mod remove_element;
