@@ -7,6 +7,7 @@ pub mod design_hash_set;
 pub mod dota2_senate;
 pub mod duplicate_zeroes;
 pub mod find_the_kth_char_in_string_game_1;
+pub mod game_of_life;
 pub mod greatest_common_divisor_of_strings;
 pub mod if_n_and_its_double_exist;
 pub mod kids_with_the_greatest_num_of_candies;
