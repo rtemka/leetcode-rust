@@ -4,4 +4,6 @@ pub mod generate_parentheses;
 pub mod letter_combinations_of_phone;
 pub mod palindrome_partitioning;
 pub mod permutations;
+pub mod subsets;
+pub mod subsets_2;
 pub mod word_search;
