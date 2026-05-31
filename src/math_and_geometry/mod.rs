@@ -1,4 +1,5 @@
 pub mod add_binary;
+pub mod add_digits;
 pub mod calculate_delayed_arrival_time;
 pub mod count_good_triplets;
 pub mod count_good_triplets_in_array;
