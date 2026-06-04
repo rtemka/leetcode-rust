@@ -1,3 +1,4 @@
+pub mod check_if_string_is_prefix_of_array;
 pub mod check_if_word_occurs_as_prefix_of_any_word;
 pub mod di_string_match;
 pub mod is_subsequence;
