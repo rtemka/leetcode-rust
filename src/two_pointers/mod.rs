@@ -13,6 +13,7 @@ pub mod move_zeroes;
 pub mod palindromic_substrings;
 pub mod partition_lables;
 pub mod rem_dups_from_sorted_array;
+pub mod remove_duplicates_from_sorted_arr_2;
 pub mod remove_element;
 pub mod reverse_only_letters;
 pub mod reverse_string;
