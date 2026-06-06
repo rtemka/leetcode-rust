@@ -9,5 +9,6 @@ pub mod max_sum_of_two_non_overlapping_subarrays;
 pub mod min_sub_array_sum;
 pub mod minimum_window_substring;
 pub mod number_of_substrings_containing_all_three_chars;
+pub mod repeated_dna_sequences;
 pub mod sliding_window_maximum;
 pub mod subarrays_with_k_different_integers;
