@@ -3,6 +3,7 @@ pub mod check_if_word_occurs_as_prefix_of_any_word;
 pub mod di_string_match;
 pub mod is_subsequence;
 pub mod long_pressed_name;
+pub mod longest_palindromic_substring;
 pub mod longest_word_in_dict_thru_deleting;
 pub mod matchsticks_to_square;
 pub mod max_number_of_k_sum_pairs;
