@@ -30,3 +30,5 @@ pub mod rotate_string;
 pub mod special_array_1;
 pub mod string_compression_3;
 pub mod valid_mountain_array;
+pub mod weighted_word_mapping;
+
