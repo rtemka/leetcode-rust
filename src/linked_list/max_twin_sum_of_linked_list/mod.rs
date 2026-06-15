@@ -1,3 +1,4 @@
+// #2130
 // https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description
 struct Solution;
 
@@ -19,6 +20,33 @@ impl Solution {
         }
         max_sum
     }
+
+    pub fn pair_sum_rec(head: Option<Box<ListNode>>) -> i32 {
+        let mut max_sum = 0;
+        let _ = Self::max_twin_sum_helper(&head, &head, &mut max_sum);
+        max_sum
+    }
+
+    fn max_twin_sum_helper<'a>(
+        head: &'a Option<Box<ListNode>>,
+        cur: &'a Option<Box<ListNode>>,
+        max_sum: &mut i32,
+    ) -> &'a Option<Box<ListNode>> {
+        if let Some(node) = cur {
+            let h = Self::max_twin_sum_helper(head, &node.next, max_sum);
+            let (next, v) = {
+                if let Some(n) = h {
+                    (&n.next, n.val)
+                } else {
+                    (&None, 0)
+                }
+            };
+            *max_sum = i32::max(*max_sum, node.val + v);
+            next
+        } else {
+            head
+        }
+    }
 }
 
 #[cfg(test)]
@@ -38,5 +66,20 @@ mod tests {
             })),
         }));
         assert_eq!(6, Solution::pair_sum(head));
+    }
+
+    #[test]
+    fn max_twin_sum_rec() {
+        let head = Some(Box::new(ListNode {
+            val: 5,
+            next: Some(Box::new(ListNode {
+                val: 4,
+                next: Some(Box::new(ListNode {
+                    val: 2,
+                    next: Some(Box::new(ListNode { val: 1, next: None })),
+                })),
+            })),
+        }));
+        assert_eq!(6, Solution::pair_sum_rec(head));
     }
 }
