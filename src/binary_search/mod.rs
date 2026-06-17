@@ -4,6 +4,7 @@ pub mod find_peak_element;
 pub mod guess_number_hihger_or_lower;
 pub mod koko_eating_bananas;
 pub mod median_of_two_sorted_arrays;
+pub mod most_profit_assignig_work;
 pub mod pow_x_n;
 pub mod search_in_rotated_sorted_array;
 pub mod special_array_2;
