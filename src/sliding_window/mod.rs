@@ -2,6 +2,7 @@ pub mod find_all_anagrams_in_a_string;
 pub mod longest_harmonious_subsequence;
 pub mod longest_subarray_after_del_1_element;
 pub mod longest_substr_without_rep_chars;
+pub mod longest_substring_with_at_least_k_rep_chars;
 pub mod max_average_subarray_1;
 pub mod max_cons_ones;
 pub mod max_num_of_vowels_in_substring;
