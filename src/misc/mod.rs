@@ -26,6 +26,7 @@ pub mod occurrences_after_bigram;
 pub mod rep_elems_with_gratests_from_right;
 pub mod reshape_matrix;
 pub mod richest_customer_wealth;
+pub mod robot_return_to_origin;
 pub mod rotate_array;
 pub mod rotate_string;
 pub mod special_array_1;
