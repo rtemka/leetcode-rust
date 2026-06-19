@@ -30,14 +30,10 @@ mod tests {
     fn valid_mountain_array() {
         assert!(!Solution::valid_mountain_array(vec![2, 1]));
         assert!(Solution::valid_mountain_array(vec![0, 3, 2, 1]));
-        assert!(
-            !Solution::valid_mountain_array(vec![9, 8, 7, 6, 5, 4, 3, 2, 1, 0])
-        );
-        assert!(
-            Solution::valid_mountain_array(vec![0, 2, 3, 4, 5, 2, 1, 0])
-        );
-        assert!(
-            !Solution::valid_mountain_array(vec![0, 2, 3, 3, 5, 2, 1])
-        );
+        assert!(!Solution::valid_mountain_array(vec![
+            9, 8, 7, 6, 5, 4, 3, 2, 1, 0
+        ]));
+        assert!(Solution::valid_mountain_array(vec![0, 2, 3, 4, 5, 2, 1, 0]));
+        assert!(!Solution::valid_mountain_array(vec![0, 2, 3, 3, 5, 2, 1]));
     }
 }

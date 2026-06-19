@@ -79,11 +79,7 @@ impl Solution {
             }
             None => None,
         };
-        if node.is_some() {
-            node
-        } else {
-            root.take()
-        }
+        if node.is_some() { node } else { root.take() }
     }
 
     fn attach_to_right(

@@ -12,13 +12,12 @@ impl Solution {
         // Constraints:
         // 1 <= s.length <= 2000
         let plus_one = map.iter().any(|(_, count)| *count == 1 || *count & 1 == 1);
-        map.into_iter().filter(|(_, count)| *count > 1).fold(
-            plus_one as i32,
-            |acc, (_, count)| {
+        map.into_iter()
+            .filter(|(_, count)| *count > 1)
+            .fold(plus_one as i32, |acc, (_, count)| {
                 acc + (count - (count & 1 == 1) as i32) // make even, we only
-                                                        // conserned with even amount of chars
-            },
-        )
+                // conserned with even amount of chars
+            })
     }
 }
 

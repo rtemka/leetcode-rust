@@ -49,13 +49,7 @@ impl Solution {
             .map(|q| {
                 let (lo, hi) = (q[0] as usize, q[1] as usize);
                 // Calculate the number of special pairs in the range
-                let special_count = prefix[hi] - {
-                    if lo > 0 {
-                        prefix[lo]
-                    } else {
-                        0
-                    }
-                };
+                let special_count = prefix[hi] - { if lo > 0 { prefix[lo] } else { 0 } };
                 special_count == 0
             })
             .collect()

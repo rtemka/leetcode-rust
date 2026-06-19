@@ -69,7 +69,7 @@ impl Solution {
                         // prev_max + (prev_digit * 10usize.pow(prev_power) + prev_max)
                         if prev_power == 0 {
                             first_digit + prev_max + 1 // 10, 1[1], 12, 13, 14...
-                                                       // prev_max + (prev_digit * 10usize.pow(prev_power) + prev_max)
+                        // prev_max + (prev_digit * 10usize.pow(prev_power) + prev_max)
                         } else {
                             10usize.pow(prev_power) + first_digit + 1 /*+self*/ + prev_max
                             // prev_max + prev_fact * 2

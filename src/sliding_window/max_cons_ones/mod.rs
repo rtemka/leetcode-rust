@@ -14,11 +14,7 @@ impl Solution {
             }
             running_max = 0;
         }
-        if running_max > max {
-            running_max
-        } else {
-            max
-        }
+        if running_max > max { running_max } else { max }
     }
 }
 

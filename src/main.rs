@@ -28,7 +28,7 @@ mod tree;
 mod trie;
 mod two_pointers;
 
-static PATTERNS: LazyLock<[Pattern; 4]> = LazyLock::new(|| {
+static PATTERNS: LazyLock<[Pattern; 5]> = LazyLock::new(|| {
     [
         Pattern {
             name: "binary_search".to_string(),
@@ -36,16 +36,19 @@ static PATTERNS: LazyLock<[Pattern; 4]> = LazyLock::new(|| {
                 Variation {
                     name: "exact".to_string(),
                     description: "нужно получить точное совпадение".to_string(),
+                    ..Default::default()
                 },
                 Variation {
                     name: "lower_bound".to_string(),
                     description: "нужно получить место, где было бы вставлено значение слева"
                         .to_string(),
+                    ..Default::default()
                 },
                 Variation {
                     name: "upper_bound".to_string(),
                     description: "нужно получить место, где было бы вставлено значение справа"
                         .to_string(),
+                    ..Default::default()
                 },
             ],
             problems: vec![],
@@ -56,36 +59,108 @@ static PATTERNS: LazyLock<[Pattern; 4]> = LazyLock::new(|| {
             problems: vec![Problem {
                 url: "https://leetcode.com/problems/permutations".to_string(),
                 description:
-                    "Given an array nums of distinct integers, return all the possible permutations"
-                        .to_string(),
+                    Some("Given an array nums of distinct integers, return all the possible permutations"
+                        .to_string()),
             }],
+        },
+        Pattern {
+            name: "two_pointers".to_string(),
+            variations: vec![
+                Variation {
+                    name: "inward_traversal".to_string(),
+                    description: "В этой стратегии указатели начинают с противоположных концов структуры данных и постепенно двигаются друг к другу"
+                        .to_string(),
+                    canonical_problem: Some(Problem{
+                        url: "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted".to_string(),
+                        description: None,
+                    }),
+                },
+                Variation {
+                    name: "unidirectional_traversal".to_string(),
+                    description: "В этой стратегии перемещение обоих указателей начинается с одного конца структуры данных (обычно с начала) и происходит в одном направлении"
+                        .to_string(),
+                    canonical_problem: Some(Problem{
+                        url: "https://leetcode.com/problems/move-zeroes/description/".to_string(),
+                        description: None,
+                    }),
+                },
+                Variation {
+                    name: "staged_traversal".to_string(),
+                    description: "Здесь один указатель проходит по структуре данных, и, как только он встречает элемент".to_string() +
+                        ", удовлетворяющий определенному условию, второй указатель начинает двигаться от этой позиции для дальнейшего анализа",
+                    canonical_problem: Some(Problem{
+                        url: "https://leetcode.com/problems/next-permutation".to_string(),
+                        description: None,
+                    }),
+                },
+            ],
+            problems: vec![
+                Problem{
+                    url: "https://leetcode.com/problems/move-zeroes/description/".to_string(),
+                    description: Some("unidirectional_traversal".to_string()),
+                },
+                Problem{
+                    url: "https://leetcode.com/problems/3sum".to_string(),
+                    description: Some("inward_traversal".to_string()),
+                },
+                Problem{
+                    url: "https://leetcode.com/problems/container-with-most-water".to_string(),
+                    description: Some("inward_traversal".to_string()),
+                },
+                Problem{
+                    url: "https://leetcode.com/problems/next-permutation".to_string(),
+                    description: Some("staged_traversal".to_string()),
+                },
+            ],
         },
         Pattern {
             name: "sliding_window".to_string(),
             variations: vec![
                 Variation {
-                    name: "extend_and_shrink".to_string(),
-                    description: "сначала расширяем чтобы окно стало валидным, потом сужаем пока не станет невалидным"
+                    name: "fixed_window".to_string(),
+                    description: "Фиксированное скользящее окно сохраняет постоянную длину, двигаясь по структуре данных"
                         .to_string(),
+                    canonical_problem: Some(Problem{
+                        url: "http://leetcode.com/problems/find-all-anagrams-in-a-string/description/".to_string(),
+                        description: None,
+                    }),
                 },
                 Variation {
-                    name: "extend_and_slide".to_string(),
-                    description: "сначала расширяем чтобы окно стало валидным, потом двигаем окно по массиву"
+                    name: "dynamic_window".to_string(),
+                    description: "динамическое окнo может изменять свою длину — расширяться или сужаться — при перемещении по структуре данных"
                         .to_string(),
+                    canonical_problem: Some(Problem{
+                        url: "https://leetcode.com/problems/longest-substring-without-repeating-characters/".to_string(),
+                        description: None,
+                    }),
                 },
             ],
             problems: vec![],
+            // problems: vec![
+            //     Problem{
+            //         url: "http://leetcode.com/problems/find-all-anagrams-in-a-string/description/".to_string(),
+            //         description: Some("fixed_window".to_string()),
+            //     },
+            //     Problem{
+            //         url: "https://leetcode.com/problems/longest-substring-without-repeating-characters/".to_string(),
+            //         description: Some("dynamic_window".to_string()),
+            //     },
+            //
+            // ],
         },
+
         Pattern {
             name: "sorting".to_string(),
             variations: vec![
                 Variation {
                     name: "merge_sort".to_string(),
                     description: "реализуй сортировку слиянием".to_string(),
+                    ..Default::default()
                 },
                 Variation {
                     name: "bubble_sort".to_string(),
                     description: "реализуй сортировку пузырьком".to_string(),
+                    ..Default::default()
                 },
             ],
             problems: vec![],
@@ -132,6 +207,12 @@ fn main() {
                 "\t Variation: name: {:?}, description: {:?}",
                 v.name, v.description
             );
+            if let Some(cp) = &v.canonical_problem {
+                println!(
+                    "\t Variation canonical problem: url: {:?}, description: {:?}",
+                    cp.url, cp.description
+                );
+            }
         }
         for problem in p.problems {
             println!(
@@ -196,7 +277,7 @@ pub struct Pattern {
     pub problems: Vec<Problem>,
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ChoosenPattern<'a> {
     pub name: &'a str,
     pub variations: Vec<&'a Variation>,
@@ -223,16 +304,17 @@ impl<'a> ChoosenPattern<'a> {
     }
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Problem {
     pub url: String,
-    pub description: String,
+    pub description: Option<String>,
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Variation {
     pub name: String,
     pub description: String,
+    pub canonical_problem: Option<Problem>,
 }
 
 #[derive(Debug, Clone)]

@@ -39,7 +39,7 @@ mod tests {
         }));
 
         let mut res = Solution::delete_duplicates(head);
-        let expected = vec![1,2];
+        let expected = vec![1, 2];
         for exp in expected {
             let node = res.unwrap();
             assert_eq!(node.val, exp);

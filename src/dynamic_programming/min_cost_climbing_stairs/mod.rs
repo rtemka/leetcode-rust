@@ -25,7 +25,7 @@ impl Solution {
         dp[cost.len() - 1] = cost[cost.len() - 1];
         dp[cost.len() - 2] = cost[cost.len() - 2];
         for i in (0..cost.len() - 2).rev() {
-            dp[i] = cost[i] + i32::min(dp[i+1], dp[i+2]);
+            dp[i] = cost[i] + i32::min(dp[i + 1], dp[i + 2]);
         }
         println!("{:?}", dp);
         i32::min(dp[0], dp[1])
@@ -43,8 +43,11 @@ mod tests {
             Solution::min_cost_climbing_stairs(vec![1, 100, 1, 1, 1, 100, 1, 1, 100, 1])
         );
         assert_eq!(15, Solution::min_cost_climbing_stairs(vec![10, 15, 20]));
-        assert_eq!(55, Solution::min_cost_climbing_stairs(vec![55,372]));
-        assert_eq!(850, Solution::min_cost_climbing_stairs(vec![313,850,812]));
-        assert_eq!(850, Solution::min_cost_climbing_stairs_classic(vec![313,850,812]));
+        assert_eq!(55, Solution::min_cost_climbing_stairs(vec![55, 372]));
+        assert_eq!(850, Solution::min_cost_climbing_stairs(vec![313, 850, 812]));
+        assert_eq!(
+            850,
+            Solution::min_cost_climbing_stairs_classic(vec![313, 850, 812])
+        );
     }
 }

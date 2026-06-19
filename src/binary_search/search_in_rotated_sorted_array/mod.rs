@@ -66,11 +66,7 @@ impl Solution {
                 lo = mid;
             }
         }
-        if nums[lo] < nums[hi] {
-            lo
-        } else {
-            hi
-        }
+        if nums[lo] < nums[hi] { lo } else { hi }
     }
 }
 
@@ -85,10 +81,7 @@ mod tests {
         assert_eq!(0, Solution::search_pivot_point(&[1]));
         assert_eq!(0, Solution::search_pivot_point(&[1, 3]));
         assert_eq!(0, Solution::search_pivot_point(&[1, 2, 3, 4, 5]));
-        assert_eq!(
-            2,
-            Solution::search_pivot_point(&[7, 8, 1, 2, 3, 4, 5, 6])
-        );
+        assert_eq!(2, Solution::search_pivot_point(&[7, 8, 1, 2, 3, 4, 5, 6]));
     }
 
     #[test]

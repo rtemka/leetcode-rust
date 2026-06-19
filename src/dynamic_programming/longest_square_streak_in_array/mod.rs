@@ -19,11 +19,7 @@ impl Solution {
                 result = result.max(running_max);
             }
         }
-        if result < 2 {
-            -1
-        } else {
-            result
-        }
+        if result < 2 { -1 } else { result }
     }
 }
 

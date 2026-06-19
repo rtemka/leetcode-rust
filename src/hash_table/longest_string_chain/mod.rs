@@ -96,7 +96,7 @@ impl Solution {
         }
         // println!("COMPLETED for {:?}\t{}", word, cur_longest);
 
-        // remember the chain length from this word downward. 
+        // remember the chain length from this word downward.
         map.insert(word, cur_longest - cur_chain);
         // compute longest chain overall.
         *longest = i32::max(*longest, cur_longest);

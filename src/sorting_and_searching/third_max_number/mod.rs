@@ -29,11 +29,7 @@ impl Solution {
                 _ => continue,
             }
         }
-        if let Some(t) = third {
-            t
-        } else {
-            max
-        }
+        if let Some(t) = third { t } else { max }
     }
 }
 

@@ -3,7 +3,7 @@ struct Solution;
 
 const PHONE_KEYBOARD: [&str; 8] = ["abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"];
 const OFFSET: u8 = 0x32; // 50; so for example "2" as ASCII == 50 - 50 becomes 0 index in
-                         // PHONE_KEYBOARD
+// PHONE_KEYBOARD
 
 impl Solution {
     pub fn letter_combinations(digits: String) -> Vec<String> {

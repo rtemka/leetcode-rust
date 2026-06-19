@@ -16,11 +16,7 @@ impl Solution {
     pub fn maximum_wealth_fold(accounts: Vec<Vec<i32>>) -> i32 {
         accounts.iter().fold(0, |acc, v| {
             let curr = v.iter().sum();
-            if curr > acc {
-                curr
-            } else {
-                acc
-            }
+            if curr > acc { curr } else { acc }
         })
     }
 }

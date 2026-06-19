@@ -42,11 +42,7 @@ impl Solution {
             println!("{}", res);
             res *= x;
         }
-        if negative {
-            1.0 / res
-        } else {
-            res
-        }
+        if negative { 1.0 / res } else { res }
     }
 }
 

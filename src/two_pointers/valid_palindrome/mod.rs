@@ -5,7 +5,8 @@ impl Solution {
     pub fn is_palindrome(s: String) -> bool {
         let mut i = s
             .chars()
-            .filter(|&c| c.is_ascii_alphanumeric()).map(|c| c.to_ascii_lowercase());
+            .filter(|&c| c.is_ascii_alphanumeric())
+            .map(|c| c.to_ascii_lowercase());
         loop {
             match (i.next(), i.next_back()) {
                 (Some(a), Some(b)) if a == b => continue,

@@ -6,11 +6,7 @@ impl Solution {
         (low..=high)
             .filter_map(|i| {
                 let s = i.to_string();
-                if s.len() % 2 == 0 {
-                    Some(s)
-                } else {
-                    None
-                }
+                if s.len() % 2 == 0 { Some(s) } else { None }
             })
             .fold(0, |acc, num| {
                 let first = &num[..num.len() / 2]

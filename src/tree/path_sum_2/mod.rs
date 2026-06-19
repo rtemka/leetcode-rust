@@ -28,20 +28,8 @@ impl Solution {
                     }
                 }
                 _ => {
-                    Self::path_sum_rec(
-                        &node.left,
-                        target_sum,
-                        current_sum + node.val,
-                        res,
-                        cur,
-                    );
-                    Self::path_sum_rec(
-                        &node.right,
-                        target_sum,
-                        current_sum + node.val,
-                        res,
-                        cur,
-                    );
+                    Self::path_sum_rec(&node.left, target_sum, current_sum + node.val, res, cur);
+                    Self::path_sum_rec(&node.right, target_sum, current_sum + node.val, res, cur);
                 }
             };
             cur.pop();
