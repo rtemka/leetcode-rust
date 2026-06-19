@@ -162,6 +162,21 @@ static PATTERNS: LazyLock<[Pattern; 5]> = LazyLock::new(|| {
                     description: "реализуй сортировку пузырьком".to_string(),
                     ..Default::default()
                 },
+                Variation {
+                    name: "insertion_sort".to_string(),
+                    description: "реализуй сортировку вставкой".to_string(),
+                    ..Default::default()
+                },
+                Variation {
+                    name: "selection_sort".to_string(),
+                    description: "реализуй сортировку выбором".to_string(),
+                    ..Default::default()
+                },
+                Variation {
+                    name: "quicksort".to_string(),
+                    description: "реализуй быструю сортировку".to_string(),
+                    ..Default::default()
+                },
             ],
             problems: vec![],
         },
