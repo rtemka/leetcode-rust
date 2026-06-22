@@ -21,6 +21,7 @@ pub mod max_value_of_an_ordered_triplet_2;
 pub mod maximum_subarray_total_value_1;
 pub mod min_num_of_changes_to_make_binary_str_beautiful;
 pub mod monotonic_array;
+pub mod number_of_lines_to_write_string;
 pub mod number_of_recent_calls;
 pub mod number_of_senior_citizens;
 pub mod occurrences_after_bigram;
