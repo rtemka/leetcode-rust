@@ -11,6 +11,7 @@ pub mod min_sub_array_sum;
 pub mod minimum_window_substring;
 pub mod num_of_smooth_descent_periods_of_stock;
 pub mod number_of_substrings_containing_all_three_chars;
+pub mod permutation_in_string;
 pub mod repeated_dna_sequences;
 pub mod sliding_window_maximum;
 pub mod subarray_product_less_than_k;
