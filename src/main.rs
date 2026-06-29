@@ -28,7 +28,7 @@ mod tree;
 mod trie;
 mod two_pointers;
 
-static PATTERNS: LazyLock<[Pattern; 5]> = LazyLock::new(|| {
+static PATTERNS: LazyLock<[Pattern; 6]> = LazyLock::new(|| {
     [
         Pattern {
             name: "binary_search".to_string(),
@@ -147,6 +147,36 @@ static PATTERNS: LazyLock<[Pattern; 5]> = LazyLock::new(|| {
             //     },
             //
             // ],
+        },
+        Pattern {
+            name: "graph_traversal".to_string(),
+            variations: vec![
+                Variation {
+                    name: "dfs_recursive".to_string(),
+                    description: "реализуй поиск в глубину с помощью рекурсии".to_string(),
+                    canonical_problem: Some(Problem{
+                        url: "https://leetcode.com/problems/maximum-depth-of-binary-tree".to_string(),
+                        description: None,
+                    }),
+                },
+                Variation {
+                    name: "dfs_iterative".to_string(),
+                    description: "реализуй поиск в глубину итеративно с помощью стэка".to_string(),
+                    canonical_problem: Some(Problem{
+                        url: "https://leetcode.com/problems/maximum-depth-of-binary-tree".to_string(),
+                        description: Some("Найдите максимальную глубину бинарного дерева".to_string()),
+                    }),
+                },
+                Variation {
+                    name: "bfs".to_string(),
+                    description: "реализуй поиск в ширину".to_string(),
+                    canonical_problem: Some(Problem{
+                        url: "https://leetcode.com/problems/binary-tree-level-order-traversal".to_string(),
+                        description: None,
+                    }),
+                },
+            ],
+            problems: vec![],
         },
 
         Pattern {
