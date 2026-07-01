@@ -1,3 +1,4 @@
+pub mod count_subarrays_with_fixed_bounds;
 pub mod find_all_anagrams_in_a_string;
 pub mod longest_harmonious_subsequence;
 pub mod longest_subarray_after_del_1_element;
