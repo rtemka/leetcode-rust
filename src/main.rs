@@ -70,8 +70,7 @@ static PATTERNS: LazyLock<[Pattern; 6]> = LazyLock::new(|| {
                     name: "inward_traversal".to_string(),
                     description: "В этой стратегии указатели начинают с противоположных концов структуры данных и постепенно двигаются друг к другу"
                         .to_string(),
-                    canonical_problem: Some(Problem{
-                        url: "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted".to_string(),
+                    canonical_problem: Some(Problem{ url: "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted | https://leetcode.com/problems/container-with-most-water | https://leetcode.com/problems/3sum ".to_string(),
                         description: None,
                     }),
                 },
