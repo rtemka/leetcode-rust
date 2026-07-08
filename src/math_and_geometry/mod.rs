@@ -7,6 +7,7 @@ pub mod count_symmetric_integers;
 pub mod diagonal_traverse;
 pub mod even_number_of_digits;
 pub mod excel_sheet_column_title;
+pub mod find_3_consecutive_integers_that_sum_to_a_given_number;
 pub mod k_th_symbol_in_grammar;
 pub mod missing_number;
 pub mod multiply_strings;
