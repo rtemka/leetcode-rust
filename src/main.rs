@@ -174,6 +174,11 @@ static PATTERNS: LazyLock<[Pattern; 6]> = LazyLock::new(|| {
                         description: None,
                     }),
                 },
+                Variation {
+                    name: "bellman-ford".to_string(),
+                    description: "реализуй обход с помощью алгоритма Беллмана-Форда".to_string(),
+                    canonical_problem: None,
+                },
             ],
             problems: vec![],
         },
