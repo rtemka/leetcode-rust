@@ -1,5 +1,6 @@
 // #3286
 // https://leetcode.com/problems/find-a-safe-walk-through-a-grid/description
+// See also: #2812
 
 struct Solution;
 
