@@ -16,6 +16,7 @@ pub mod number_of_digit_one;
 pub mod permutation_sequence;
 pub mod plus_one;
 pub mod rotate_image;
+pub mod sequential_digits;
 pub mod shifting_letters;
 pub mod spiral_matrix;
 pub mod sqrt_x;
