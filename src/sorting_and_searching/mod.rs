@@ -1,5 +1,6 @@
 pub mod height_checker;
 pub mod largest_number;
+pub mod min_cost_of_bying_candies_with_discount;
 pub mod min_time_difference;
 pub mod next_permutation;
 pub mod rm_subfolders_from_filesystem;
