@@ -177,7 +177,7 @@ static PATTERNS: LazyLock<[Pattern; 6]> = LazyLock::new(|| {
                 Variation {
                     name: "bellman-ford".to_string(),
                     description: "реализуй обход с помощью алгоритма Беллмана-Форда".to_string(),
-                    canonical_problem: None,
+                    canonical_problem: Some(Problem { url: "https://leetcode.com/problems/cheapest-flights-within-k-stops".to_string(), description: None }),
                 },
             ],
             problems: vec![],

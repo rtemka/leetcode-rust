@@ -1,3 +1,4 @@
+pub mod earliest_finish_time_for_land_and_water_rides_1;
 pub mod height_checker;
 pub mod largest_number;
 pub mod max_element_after_decreasing_and_rearranging;
