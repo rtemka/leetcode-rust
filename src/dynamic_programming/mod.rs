@@ -26,6 +26,8 @@ pub mod nth_tribonacci_number;
 pub mod pascal_triangle;
 pub mod pascal_triangle_2;
 pub mod solving_questions_with_brainpower;
+pub mod total_waviness_of_numbers_in_range_1;
+pub mod total_waviness_of_numbers_in_range_2;
 pub mod ugly_number_2;
 pub mod unique_paths;
 
