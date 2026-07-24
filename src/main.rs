@@ -28,8 +28,22 @@ mod tree;
 mod trie;
 mod two_pointers;
 
-static PATTERNS: LazyLock<[Pattern; 6]> = LazyLock::new(|| {
+static PATTERNS: LazyLock<[Pattern; 7]> = LazyLock::new(|| {
     [
+        Pattern {
+            name: "union_find(DSU)".to_string(),
+            variations: vec![
+                Variation {
+                    name: "default".to_string(),
+                    description: "Disjoint Set Union(Объединение непересекающихся множеств) - структура данных, которая умеет делать ровно две вещи:\n\t1.Объединять два непересекающихся множества в одно\n\t2. Находить корень множества, которому принадлежит элемент.\n\n Реализуй структуру DSU с необходимыми операциями".to_string(),
+                    canonical_problem: Some(Problem{ url: "https://leetcode.com/problems/number-of-provinces".to_string(),
+                        description: None,
+                    }),
+                },
+            ],
+            problems: vec![],
+        },
+
         Pattern {
             name: "binary_search".to_string(),
             variations: vec![
@@ -53,6 +67,7 @@ static PATTERNS: LazyLock<[Pattern; 6]> = LazyLock::new(|| {
             ],
             problems: vec![],
         },
+
         Pattern {
             name: "backtracking".to_string(),
             variations: vec![],
@@ -63,6 +78,7 @@ static PATTERNS: LazyLock<[Pattern; 6]> = LazyLock::new(|| {
                         .to_string()),
             }],
         },
+
         Pattern {
             name: "two_pointers".to_string(),
             variations: vec![
@@ -112,6 +128,7 @@ static PATTERNS: LazyLock<[Pattern; 6]> = LazyLock::new(|| {
                 },
             ],
         },
+
         Pattern {
             name: "sliding_window".to_string(),
             variations: vec![
@@ -147,6 +164,7 @@ static PATTERNS: LazyLock<[Pattern; 6]> = LazyLock::new(|| {
             //
             // ],
         },
+
         Pattern {
             name: "graph_traversal".to_string(),
             variations: vec![
