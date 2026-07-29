@@ -3,6 +3,7 @@ pub mod earliest_finish_time_for_land_and_water_rides_2;
 pub mod height_checker;
 pub mod largest_number;
 pub mod max_element_after_decreasing_and_rearranging;
+pub mod maximum_product_of_two_elements_in_array;
 pub mod min_cost_of_bying_candies_with_discount;
 pub mod min_time_difference;
 pub mod next_permutation;
