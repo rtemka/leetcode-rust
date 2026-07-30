@@ -3,6 +3,7 @@ pub mod count_the_number_of_complete_components;
 pub mod find_a_safe_walk_through_a_grid;
 pub mod find_all_possible_recipies_from_given_supplies;
 pub mod find_the_safest_path_in_grid;
+pub mod island_perimeter;
 pub mod keys_and_rooms;
 pub mod max_area_of_island;
 pub mod maximum_number_of_points_from_grid_queries;
