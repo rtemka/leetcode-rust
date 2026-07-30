@@ -4,6 +4,7 @@ pub mod find_a_safe_walk_through_a_grid;
 pub mod find_all_possible_recipies_from_given_supplies;
 pub mod find_the_safest_path_in_grid;
 pub mod keys_and_rooms;
+pub mod max_area_of_island;
 pub mod maximum_number_of_points_from_grid_queries;
 pub mod minimum_score_of_a_path_between_two_cities;
 pub mod nearest_exit_from_entrance_in_maze;
