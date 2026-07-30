@@ -1,3 +1,4 @@
+pub mod battleships_in_a_board;
 pub mod cheapest_flights_within_k_stops;
 pub mod count_the_number_of_complete_components;
 pub mod find_a_safe_walk_through_a_grid;
