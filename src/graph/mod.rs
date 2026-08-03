@@ -1,6 +1,7 @@
 pub mod battleships_in_a_board;
 pub mod cheapest_flights_within_k_stops;
 pub mod count_the_number_of_complete_components;
+pub mod detonate_the_maximum_bombs;
 pub mod find_a_safe_walk_through_a_grid;
 pub mod find_all_possible_recipies_from_given_supplies;
 pub mod find_the_safest_path_in_grid;
