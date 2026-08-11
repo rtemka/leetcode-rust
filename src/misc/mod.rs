@@ -9,6 +9,7 @@ pub mod del_char_to_make_fancy_string;
 pub mod design_hash_set;
 pub mod dota2_senate;
 pub mod duplicate_zeroes;
+pub mod find_missing_elements;
 pub mod find_the_kth_char_in_string_game_1;
 pub mod furthest_point_from_origin;
 pub mod game_of_life;
