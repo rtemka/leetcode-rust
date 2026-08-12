@@ -1,3 +1,4 @@
+pub mod advantage_shuffle;
 pub mod array_partition_1;
 pub mod assign_cookies;
 pub mod can_place_flowers;
