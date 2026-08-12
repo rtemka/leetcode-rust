@@ -12,5 +12,6 @@ pub mod maximum_number_of_points_from_grid_queries;
 pub mod minimum_score_of_a_path_between_two_cities;
 pub mod nearest_exit_from_entrance_in_maze;
 pub mod number_of_provinces;
+pub mod push_dominoes;
 pub mod redundant_connection;
 pub mod zero_one_matrix;
