@@ -8,6 +8,7 @@ pub mod max_average_subarray_1;
 pub mod max_cons_ones;
 pub mod max_num_of_vowels_in_substring;
 pub mod max_sum_of_two_non_overlapping_subarrays;
+pub mod maximum_length_substring_with_two_occurrences;
 pub mod min_sub_array_sum;
 pub mod minimum_window_substring;
 pub mod num_of_smooth_descent_periods_of_stock;
