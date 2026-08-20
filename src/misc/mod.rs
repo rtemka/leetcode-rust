@@ -7,6 +7,7 @@ pub mod count_and_say;
 pub mod count_binary_substrings;
 pub mod del_char_to_make_fancy_string;
 pub mod design_hash_set;
+pub mod distance_between_bus_stops;
 pub mod dota2_senate;
 pub mod duplicate_zeroes;
 pub mod find_missing_elements;
