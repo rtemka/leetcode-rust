@@ -14,4 +14,5 @@ pub mod nearest_exit_from_entrance_in_maze;
 pub mod number_of_provinces;
 pub mod push_dominoes;
 pub mod redundant_connection;
+pub mod remove_methods_from_project;
 pub mod zero_one_matrix;
