@@ -36,6 +36,7 @@ pub mod richest_customer_wealth;
 pub mod robot_return_to_origin;
 pub mod rotate_array;
 pub mod rotate_string;
+pub mod shortest_distance_to_a_character;
 pub mod special_array_1;
 pub mod string_compression_3;
 pub mod toeplitz_matrix;
