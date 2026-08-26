@@ -7,6 +7,7 @@ pub mod koko_eating_bananas;
 pub mod median_of_two_sorted_arrays;
 pub mod most_profit_assignig_work;
 pub mod pow_x_n;
+pub mod relative_sort_array;
 pub mod search_in_rotated_sorted_array;
 pub mod special_array_2;
 pub mod successful_pairs_of_spells_and_potions;
