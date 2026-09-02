@@ -18,6 +18,7 @@ pub mod greatest_common_divisor_of_strings;
 pub mod if_n_and_its_double_exist;
 pub mod kids_with_the_greatest_num_of_candies;
 pub mod largest_num_at_least_twice;
+pub mod lexicographically_smallest_permutation_greater_than_target;
 pub mod longest_common_prefix;
 pub mod make_a_string_subseq_using_cyclic_incr;
 pub mod max_count_of_pos_and_neg_integer;
