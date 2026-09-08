@@ -3,6 +3,7 @@ pub mod apply_operations;
 pub mod circular_sentence;
 pub mod concatenate_non_zero_digits_and_myltiply_by_sum_1;
 pub mod concatenate_non_zero_digits_and_myltiply_by_sum_2;
+pub mod construct_the_rectangle;
 pub mod count_and_say;
 pub mod count_binary_substrings;
 pub mod del_char_to_make_fancy_string;
