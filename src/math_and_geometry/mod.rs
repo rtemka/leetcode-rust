@@ -1,6 +1,7 @@
 pub mod add_binary;
 pub mod add_digits;
 pub mod calculate_delayed_arrival_time;
+pub mod construct_uniform_parity_array_2;
 pub mod count_good_triplets;
 pub mod count_good_triplets_in_array;
 pub mod count_symmetric_integers;
