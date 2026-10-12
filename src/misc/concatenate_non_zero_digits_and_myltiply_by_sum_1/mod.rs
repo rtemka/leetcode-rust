@@ -1,5 +1,6 @@
 // #3754
 // https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i
+// See also: #3756
 
 struct Solution;
 
